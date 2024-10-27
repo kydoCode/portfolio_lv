@@ -18,10 +18,34 @@
   },
   "featuredWork": {
     "title": "Travaux en vedette",
-    "viewButton": "Voir"
+    "viewButton": "Voir",
+    "projectsDesc": "Explorez mes projets et voyez sur quoi j'ai travaillé.",
+    "skillsDesc": "Découvrez les compétences et technologies dans lesquelles j'excelle.",
+    "experienceDesc": "Découvrez mon expérience professionnelle et mon parcours de carrière.",
+    "creationsDesc": "Découvrez mes œuvres créatives et mes projets personnels.",
+    "educationDesc": "Découvrez mon parcours éducatif et mes qualifications.",
+    "hobbiesDesc": "Découvrez mes loisirs et intérêts en dehors du travail.",
+    "aboutDesc": "En savoir plus sur moi et mon histoire.",
+    "contactDesc": "Contactez-moi pour des collaborations ou des demandes."
   },
   "latestProjects": {
     "title": "Derniers projets",
-    "viewDetails": "Voir les détails"
+    "viewDetails": "Voir les détails",
+    "noDescription": "Aucune description disponible."
+  },
+  "projectModal": {
+    "noDescription": "Aucune description disponible.",
+    "languages": "Langues",
+    "technologies": "Technologies",
+    "htmlVersion": "Version HTML",
+    "notSpecified": "Non spécifié",
+    "modernityScore": "Score de modernité",
+    "accessibility": "Accessibilité",
+    "bestPractices": "Meilleures pratiques",
+    "cleanCode": "Code propre",
+    "notAvailable": "Non disponible",
+    "viewOnGithub": "Voir sur GitHub",
+    "visitSite": "Visiter le site",
+    "close": "Fermer"
   }
 }
