@@ -18,10 +18,34 @@
   },
   "featuredWork": {
     "title": "精选作品",
-    "viewButton": "查看"
+    "viewButton": "查看",
+    "projectsDesc": "探索我的项目，看看我在做什么。",
+    "skillsDesc": "发现我擅长的技能和技术。",
+    "experienceDesc": "了解我的职业经历和职业生涯。",
+    "creationsDesc": "查看我的创意作品和个人项目。",
+    "educationDesc": "了解我的教育背景和资格。",
+    "hobbiesDesc": "了解我在工作之外的爱好和兴趣。",
+    "aboutDesc": "阅读更多关于我的故事。",
+    "contactDesc": "联系我进行合作或咨询。"
   },
   "latestProjects": {
     "title": "最新项目",
-    "viewDetails": "查看详情"
+    "viewDetails": "查看详情",
+    "noDescription": "没有可用的描述。"
+  },
+  "projectModal": {
+    "noDescription": "没有可用的描述。",
+    "languages": "语言",
+    "technologies": "技术",
+    "htmlVersion": "HTML版本",
+    "notSpecified": "未指定",
+    "modernityScore": "现代性评分",
+    "accessibility": "可访问性",
+    "bestPractices": "最佳实践",
+    "cleanCode": "干净代码",
+    "notAvailable": "不可用",
+    "viewOnGithub": "在GitHub上查看",
+    "visitSite": "访问网站",
+    "close": "关闭"
   }
 }
