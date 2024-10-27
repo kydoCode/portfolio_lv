@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Globe } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import ProjectModal from '../components/ProjectModal'
-import reposData from '../data/repos_github_for_portfolio.json'
+import reposData from '../data/repos_github_for_portfolio.json';
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation()
