@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "skills": "技能",
+    "experience": "经验",
+    "creations": "创作",
+    "education": "教育",
+    "hobbies": "爱好",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "你好，我是John Doe",
+    "subtitle": "全栈开发工程师",
+    "description": "我是一名热情的全栈开发工程师，常驻纽约。我喜欢创建美观且功能强大的网络应用程序。",
+    "cta": "查看作品集"
+  },
+  "featuredWork": {
+    "title": "精选作品",
+    "viewButton": "查看"
+  },
+  "latestProjects": {
+    "title": "最新项目",
+    "viewDetails": "查看详情"
+  }
+}
