@@ -6,6 +6,8 @@ import Experience from './pages/Experience'
 import Creations from './pages/Creations'
 import Education from './pages/Education'
 import Hobbies from './pages/Hobbies'
+import Contact from './pages/Contact'
+import About from './pages/About'
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
         <Route path="/creations" element={<Creations />} />
         <Route path="/education" element={<Education />} />
         <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   )
