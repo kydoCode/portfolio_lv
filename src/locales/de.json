@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "creations": "Kreationen",
+    "education": "Bildung",
+    "hobbies": "Hobbys",
+    "about": "Über",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Hallo, ich bin John Doe",
+    "subtitle": "Full-Stack-Entwickler",
+    "description": "Ich bin ein leidenschaftlicher Full-Stack-Entwickler mit Sitz in New York. Ich liebe es, schöne und funktionale Webanwendungen zu erstellen.",
+    "cta": "Portfolio ansehen"
+  },
+  "featuredWork": {
+    "title": "Ausgewählte Arbeiten",
+    "viewButton": "Ansehen"
+  },
+  "latestProjects": {
+    "title": "Neueste Projekte",
+    "viewDetails": "Details anzeigen"
+  }
+}

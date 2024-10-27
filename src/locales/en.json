@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "creations": "Creations",
+    "education": "Education",
+    "hobbies": "Hobbies",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm John Doe",
+    "subtitle": "Full Stack Developer",
+    "description": "I'm a passionate full stack developer based in New York. I love creating beautiful and functional web applications.",
+    "cta": "View Portfolio"
+  },
+  "featuredWork": {
+    "title": "Featured Work",
+    "viewButton": "View"
+  },
+  "latestProjects": {
+    "title": "Latest Projects",
+    "viewDetails": "View Details"
+  }
+}
