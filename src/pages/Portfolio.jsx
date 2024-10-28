@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Globe } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import ProjectModal from '../components/ProjectModal'
-import projectsData from '../data/projects.json'
+import projectsData from '../data/repos_github_for_portfolio.json'
 import { Carousel } from 'react-responsive-carousel'
 
 export default function Portfolio() {
@@ -128,10 +128,10 @@ export default function Portfolio() {
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900">{t('latestProjects.title')}</h2>
           <Carousel>
-            {projectsData.projets.slice(0, 6).map((project, index) => (
+            {projectsData.slice(0, 6).map((project, index) => (
               <div key={index} className="bg-white overflow-hidden shadow rounded-lg">
                 <div className="p-5">
-                  <h3 className="text-lg font-medium text-gray-900">{project.nom}</h3>
+                  <h3 className="text-lg font-medium text-gray-900">{project.name}</h3>
                   <p className="mt-1 text-sm text-gray-500">{project.description || t('latestProjects.noDescription')}</p>
                   <div className="mt-4">
                     <button

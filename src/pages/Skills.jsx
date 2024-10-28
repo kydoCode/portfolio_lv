@@ -5,6 +5,9 @@ import softskillsData from '../data/softskills.json'
 export default function Skills() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <div className="mt-8">
+        <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
+      </div>
       <h1 className="text-3xl font-bold mb-4">Skills</h1>
       <div>
         <h2 className="text-2xl font-semibold mb-2">Technical Skills</h2>
@@ -32,7 +35,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <Link to="/" className="text-blue-600 hover:underline mt-4 inline-block">Back to Home</Link>
     </div>
   )
 }
