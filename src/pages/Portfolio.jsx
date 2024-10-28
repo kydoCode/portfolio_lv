@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { ChevronRight, Globe } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import ProjectModal from '../components/ProjectModal'
-import reposData from '../data/repos_github_for_portfolio.json'
+import projectsData from '../data/projects.json'
+import { Carousel } from 'react-responsive-carousel'
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation()
@@ -126,24 +127,24 @@ export default function Portfolio() {
 
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900">{t('latestProjects.title')}</h2>
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {reposData.slice(0, 6).map((project, index) => (
+          <Carousel>
+            {projectsData.projets.slice(0, 6).map((project, index) => (
               <div key={index} className="bg-white overflow-hidden shadow rounded-lg">
                 <div className="p-5">
-                  <h3 className="text-lg font-medium text-gray-900">{project.name}</h3>
+                  <h3 className="text-lg font-medium text-gray-900">{project.nom}</h3>
                   <p className="mt-1 text-sm text-gray-500">{project.description || t('latestProjects.noDescription')}</p>
                   <div className="mt-4">
                     <button
                       onClick={() => openModal(project)}
                       className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-    >
+                    >
                       {t('latestProjects.viewDetails')}
                     </button>
                   </div>
                 </div>
               </div>
             ))}
-          </div>
+          </Carousel>
         </div>
       </main>
 
