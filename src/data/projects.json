@@ -1,0 +1,20 @@
+{
+  "projets": [
+    {
+      "nom": "SparkUX",
+      "description": "application de gestion des userStories"
+    },
+    {
+      "nom": "Instant Media",
+      "description": "outils CRUD (gestion des avis, suivi des mails clients)"
+    },
+    {
+      "nom": "SecuWipe",
+      "description": "application d'effacement sécurisé des données"
+    },
+    {
+      "nom": "Taxi Laurie",
+      "description": "optimisation SEO pour accroître la visibilité"
+    }
+  ]
+}

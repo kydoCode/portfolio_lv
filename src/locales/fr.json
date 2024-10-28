@@ -11,13 +11,13 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Bonjour, je suis John Doe",
+    "title": "Hello, moi c'est Sylvain",
     "subtitle": "Développeur Full Stack",
-    "description": "Je suis un développeur full stack passionné basé à New York. J'aime créer des applications web belles et fonctionnelles.",
+    "description": "Je suis un développeur full stack passionné basé en France. J'aime créer des applications web belles et fonctionnelles.",
     "cta": "Voir le portfolio"
   },
   "featuredWork": {
-    "title": "Travaux en vedette",
+    "title": "A l'affiche/Moi en chiffres/mon parcours:",
     "viewButton": "Voir",
     "projectsDesc": "Explorez mes projets et voyez sur quoi j'ai travaillé.",
     "skillsDesc": "Découvrez les compétences et technologies dans lesquelles j'excelle.",
