@@ -1,4 +1,3 @@
-import React from 'react'
 import { X, Github, Globe } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
@@ -30,7 +29,7 @@ export default function ProjectModal({ project, onClose }) {
                   </div>
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.technologies')}</h4>
-                    <ul className="mt-2 space-y-1">
+                    <ul className="mt-2  space-y-1">
                       {Object.entries(project.detected_technologies).map(([tech, count]) => (
                         <li key={tech} className="text-sm text-gray-500">{tech}: {count}</li>
                       ))}
@@ -75,7 +74,6 @@ export default function ProjectModal({ project, onClose }) {
             )}
             <button
               onClick={onClose}
-              aria-label="Close"
               className="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
             >
               {t('projectModal.close')}
