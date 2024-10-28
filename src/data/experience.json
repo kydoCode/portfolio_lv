@@ -1,0 +1,44 @@
+{
+  "experience": [
+    {
+      "poste": "Développeur web stagiaire",
+      "annee": 2024,
+      "entreprise": "Instant Media"
+    },
+    {
+      "poste": "Professeur Documentaliste",
+      "annees": ["2017 - 2021"],
+      "entreprise": ["Éducation Nationale"]
+    },
+    {
+      "poste": "",
+      "annees": ["2013 - 2014"],
+      "details": ["Stages en établissements, représentant étudiants Master"]
+    },
+    {
+      "poste": "",
+      "annees": ["2011 - 2012"],
+      "entreprise": ["Alliance Française (Strasbourg)"],
+      "_type": "Professeur de FLE"
+    },
+    {
+      "_type": "Professeur d'Allemand",
+      "annees": ["2010 - 2012"],
+      "details": [
+        "Stages en établissements, représentant étudiants Master",
+        "Cours à domicile (Acadomia)"
+      ]
+    },
+    {
+      "_type": "Responsable en Associations",
+      "annees": ["2015 - 2021"],
+      "details": [
+        "Album de musique, productions médias (GEM)",
+        "PSC1, BEPS, IRR (Croix-Rouge)",
+        "Respo web, com', animateur radio, assistant régie (ENS de Lyon)",
+        "Respo web, com'/SI, commercial, chargé d'enquête (NEOMA)",
+        "Président BDE des CPGE (Lycée Masséna)"
+      ]
+    }
+  ]
+}

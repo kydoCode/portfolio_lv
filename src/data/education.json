@@ -1,0 +1,63 @@
+{
+  "education": [
+    {
+      "intitule": "DWWM: Développeur Web et Web Mobile",
+      "annee": "2024 - 2025",
+      "etablissement": "La Plateforme_"
+    },
+    {
+      "intitule": "Langage à la carte",
+      "annee": 2024,
+      "etablissement": "La Plateforme_"
+    },
+    {
+      "intitule": "Apple Foundation Program",
+      "annee": "2022 - 2023",
+      "etablissement": "CDA Swift Apple (Simplon.co)"
+    },
+    {
+      "intitule": "AFP Extended",
+      "annee": 2022,
+      "etablissement": "(Simplon.co)"
+    },
+    {
+      "intitule": "AFP Initiation",
+      "annee": 2022,
+      "etablissement": "(Simplon.co)"
+    },
+    {
+      "intitule": "Master MEEF Professeur Documentaliste",
+      "annee": "2013 - 2014",
+      "etablissement": "ESPE Aix-Marseille",
+      "mention": "Assez Bien"
+    },
+    {
+      "intitule": "Master Études germaniques",
+      "annee": "2017 - 2021",
+      "etablissement": "Université Lyon III"
+    },
+    {
+      "intitule": "Master Études germaniques",
+      "annee": "2010 - 2013",
+      "etablissement": "Université de Strasbourg"
+    },
+    {
+      "intitule": "",
+      "annee": "2009 - 2010",
+      "etablissement": "ENS de Lyon"
+    },
+    {
+      "intitule": "",
+      "annee": "2008 - 2009",
+      "etablissement": [
+        {
+          "nom": "Université de Strasbourg",
+          "mention": "Assez Bien"
+        },
+        {
+          "nom": "Bachelor à Sup de Co Reims"
+        }
+      ]
+    }
+  ]
+}
