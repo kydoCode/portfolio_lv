@@ -1,14 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Code, Globe, Lightbulb } from 'lucide-react'
 
 export default function About() {
+  const [selectedSection, setSelectedSection] = useState('')
+
+  const handleSectionChange = (event) => {
+    setSelectedSection(event.target.value)
+  }
+
+  const navigateToSection = () => {
+    if (selectedSection) {
+      const sectionElement = document.getElementById(selectedSection)
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">About Me</h1>
-        
-        <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
+
+        <div className="mb-8">
+          <label htmlFor="section-select" className="block text-sm font-medium text-gray-700">
+            Jump to Section
+          </label>
+          <select
+            id="section-select"
+            name="section-select"
+            className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+            value={selectedSection}
+            onChange={handleSectionChange}
+          >
+            <option value="">Select a section</option>
+            <option value="about-me">About Me</option>
+            <option value="expertise">Technical Expertise</option>
+            <option value="problem-solving">Problem-Solving Skills</option>
+            <option value="collaborative-approach">Collaborative Approach</option>
+            <option value="mission">My Mission</option>
+          </select>
+          <button
+            type="button"
+            className="mt-2 w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-sm"
+            onClick={navigateToSection}
+          >
+            Go
+          </button>
+        </div>
+
+        <div id="about-me" className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">John Doe</h2>
             <p className="text-gray-600 mb-6">
@@ -24,8 +66,8 @@ export default function About() {
             </div>
           </div>
         </div>
-        
-        <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
+
+        <div id="expertise" className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">What I Bring to the Table</h2>
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -40,7 +82,7 @@ export default function About() {
                   </div>
                 </div>
               </li>
-              <li className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+              <li id="problem-solving" className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
                 <div className="w-full flex items-center justify-between p-6 space-x-6">
                   <div className="flex-1">
                     <div className="flex items-center space-x-3">
@@ -51,7 +93,7 @@ export default function About() {
                   </div>
                 </div>
               </li>
-              <li className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
+              <li id="collaborative-approach" className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200">
                 <div className="w-full flex items-center justify-between p-6 space-x-6">
                   <div className="flex-1">
                     <div className="flex items-center space-x-3">
@@ -65,8 +107,8 @@ export default function About() {
             </ul>
           </div>
         </div>
-        
-        <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+
+        <div id="mission" className="bg-white shadow overflow-hidden sm:rounded-lg">
           <div className="px-4 py-5 sm:p-6">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">My Mission</h2>
             <p className="text-gray-600">
@@ -74,7 +116,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        
+
         <div className="mt-8">
           <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
         </div>
