@@ -17,7 +17,7 @@
     "cta": "Voir le portfolio"
   },
   "featuredWork": {
-    "title": "A l'affiche/Moi en chiffres/mon parcours:",
+    "title": "Mon Parcours Professionnel",
     "viewButton": "Voir",
     "projectsDesc": "Explorez mes projets et voyez sur quoi j'ai travaillé.",
     "skillsDesc": "Découvrez les compétences et technologies dans lesquelles j'excelle.",
@@ -29,7 +29,7 @@
     "contactDesc": "Contactez-moi pour des collaborations ou des demandes."
   },
   "latestProjects": {
-    "title": "Derniers projets",
+    "title": "Projets Récents",
     "viewDetails": "Voir les détails",
     "noDescription": "Aucune description disponible."
   },
