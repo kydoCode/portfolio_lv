@@ -75,7 +75,7 @@ export default function Portfolio() {
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="md:flex">
             <div className="md:flex-shrink-0">
-              <img className="h-48 w-full object-cover md:w-48" src="/placeholder.svg?height=300&width=300" alt="Profile" />
+              <img className="h-full w-full object-cover md:w-48" src="../src/assets/images/avatars/avatar-homepage.jpeg" alt="Profile" />
             </div>
             <div className="p-8">
               <div className="text-sm font-semibold text-blue-600">{t('hero.subtitle')}</div>
