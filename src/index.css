@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add CSS for opacity on hover for project images */
+img:hover {
+  opacity: 0.75;
+}
