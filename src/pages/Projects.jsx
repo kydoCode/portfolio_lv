@@ -13,7 +13,7 @@ export default function Projects() {
       <Carousel>
         {projectsData.map((project, index) => (
           <div key={index}>
-            <img src={project.image || "/placeholder.svg?height=200&width=300"} alt={project.name} />
+            <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} />
             <p className="legend">{project.name}</p>
           </div>
         ))}
