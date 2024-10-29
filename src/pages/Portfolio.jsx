@@ -134,6 +134,7 @@ export default function Portfolio() {
                   <h3 className="text-lg font-medium text-gray-900">{project.name}</h3>
                   <p className="mt-1 text-sm text-gray-500">{project.description || t('latestProjects.noDescription')}</p>
                   <div className="mt-4">
+                    <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md" />
                     <button
                       onClick={() => openModal(project)}
                       className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"

@@ -17,7 +17,7 @@ export default function ProjectModal({ project, onClose }) {
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
                 <h3 className="text-lg leading-6 font-medium text-gray-900">{project.name}</h3>
                 <div className="mt-2">
-                  <img src={project.image || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md" />
+                  <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md" />
                   <p className="text-sm text-gray-500 mt-2">{project.description || t('projectModal.noDescription')}</p>
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.languages')}</h4>
