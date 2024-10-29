@@ -17,9 +17,17 @@ portfolio_lv/
 │   └── index.html
 ├── src/
 │   ├── components/
+│   │   ├── Carousel.jsx
 │   │   └── ProjectModal.jsx
 │   ├── data/
-│   │   └── repos_github_for_portfolio.json
+│   │   ├── creations.json
+│   │   ├── education.json
+│   │   ├── experience.json
+│   │   ├── hobbies.json
+│   │   ├── languages.json
+│   │   ├── projects.json
+│   │   ├── repos_github_for_portfolio.json
+│   │   └── softskills.json
 │   ├── locales/
 │   │   ├── de.json
 │   │   ├── en.json
