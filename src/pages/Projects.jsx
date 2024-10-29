@@ -27,14 +27,13 @@ export default function Projects() {
       <Carousel>
         {projectsData.map((project, index) => (
           <div key={index} className="relative">
-            <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="hover:opacity-75" />
+            <img 
+              src={project.image_path || "/placeholder.svg?height=200&width=300"} 
+              alt={project.name} 
+              className="hover:opacity-75" 
+              onClick={() => openModal(project)} 
+            />
             <p className="legend">{project.name}</p>
-            <button
-              onClick={() => openModal(project)}
-              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              View Details
-            </button>
           </div>
         ))}
       </Carousel>
