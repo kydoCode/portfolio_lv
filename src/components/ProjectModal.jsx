@@ -15,7 +15,16 @@ export default function ProjectModal({ project, onClose }) {
           <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
             <div className="sm:flex sm:items-start">
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
-                <h3 className="text-lg leading-6 font-medium text-gray-900">{project.name}</h3>
+                <div className="flex justify-between">
+                  <h3 className="text-lg leading-6 font-medium text-gray-900">{project.name}</h3>
+                  <button
+                    onClick={onClose}
+                    className="text-gray-400 hover:text-gray-500 focus:outline-none focus:text-gray-500"
+                    style={{ position: 'absolute', top: '1rem', right: '1rem' }}
+                  >
+                    <X className="h-6 w-6" />
+                  </button>
+                </div>
                 <div className="mt-2">
                   <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md" />
                   <p className="text-sm text-gray-500 mt-2">{project.description || t('projectModal.noDescription')}</p>
