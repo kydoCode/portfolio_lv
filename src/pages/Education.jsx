@@ -5,6 +5,9 @@ import educationData from '../data/education.json'
 export default function Education() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <div className="mt-8">
+        <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
+      </div>
       <h1 className="text-3xl font-bold mb-4">Education</h1>
       <ul>
         {educationData.education.map((education, index) => (
@@ -16,7 +19,6 @@ export default function Education() {
           </li>
         ))}
       </ul>
-      <Link to="/" className="text-blue-600 hover:underline mt-4 inline-block">Back to Home</Link>
     </div>
   )
 }
