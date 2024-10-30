@@ -8,3 +8,13 @@
 img:hover {
   opacity: 0.75;
 }
+
+/* Add margin between the project image and the view details button */
+.carousel .slide img {
+  margin-bottom: 1rem;
+}
+
+/* Add margin between the view details button and the dots representing images */
+.carousel .control-dots {
+  margin-top: 1rem;
+}
