@@ -31,32 +31,34 @@ export default function Projects() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
       <Header />
-      <div className="mt-8">
+      <div className="mt-8 w-full max-w-screen-lg">
         <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
       </div>
-      <h1 className="text-3xl font-bold mb-4">Projects</h1>
-      <Carousel>
-        {projectsData.map((project, index) => (
-          <div key={index} className="relative">
-            <a href={project.site_url} target="_blank" rel="noopener noreferrer">
-              <img 
-                src={project.image_path} 
-                alt={project.name} 
-                className="hover:opacity-75" 
-                onClick={() => openModal(project)} 
-              />
-            </a>
-            <p className="legend">{project.name}</p>
-            <ul className="mt-2 space-y-1">
-              {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
-                <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </Carousel>
+      <h1 className="text-3xl font-bold mb-4 w-full max-w-screen-lg">Projects</h1>
+      <div className="w-full max-w-screen-lg">
+        <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
+          {projectsData.map((project, index) => (
+            <div key={index} className="relative">
+              <a href={project.site_url} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={project.image_path} 
+                  alt={project.name} 
+                  className="hover:opacity-75" 
+                  onClick={() => openModal(project)} 
+                />
+              </a>
+              <p className="legend">{project.name}</p>
+              <ul className="mt-2 space-y-1">
+                {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
+                  <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </Carousel>
+      </div>
 
       {modalOpen && selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
