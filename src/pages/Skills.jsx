@@ -13,13 +13,13 @@ export default function Skills() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
       <Header />
-      <div className="mt-8">
+      <div className="mt-8 w-full max-w-screen-lg">
         <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
       </div>
       <h1 className="text-3xl font-bold mb-4">Skills</h1>
-      <div>
+      <div className="w-full max-w-screen-lg">
         <h2 className="text-2xl font-semibold mb-2">Technical Skills</h2>
         {softskillsData.competences.techniques.map((skill, index) => (
           <div key={index} className="mb-4">
@@ -37,7 +37,7 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <div>
+      <div className="w-full max-w-screen-lg">
         <h2 className="text-2xl font-semibold mb-2">Transversal Skills</h2>
         {softskillsData.competences.transversales.map((skill, index) => (
           <div key={index} className="mb-4">

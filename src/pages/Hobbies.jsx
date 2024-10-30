@@ -22,6 +22,7 @@ export default function Hobbies() {
           </li>
         ))}
       </ul>
+      <div className="mt-8"></div>
       <Footer />
     </div>
   )
