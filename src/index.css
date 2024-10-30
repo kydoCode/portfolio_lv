@@ -23,4 +23,14 @@ img:hover {
 header, footer {
   padding: 1rem;
   margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Add responsive design for header and footer */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 0.5rem;
+  }
 }
