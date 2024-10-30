@@ -9,7 +9,7 @@ export default function Creations() {
   return (
     <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
       <Header />
-      <div className="mt-8">
+      <div className="mt-8 w-full max-w-screen-lg">
         <Link to="/" className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md inline-flex items-center">
           <ArrowLeft className="mr-2 h-5 w-5" />
           Back to Home
