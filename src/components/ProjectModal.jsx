@@ -82,6 +82,10 @@ export default function ProjectModal({ project, onClose }) {
                       <li className="text-sm text-gray-500">{t('projectModal.cleanCode')}: {project.modernity_score?.clean_code || t('projectModal.notAvailable')}</li>
                     </ul>
                   </div>
+                  <div className="mt-4">
+                    <h4 className="text-sm font-medium text-gray-900">{t('projectModal.context')}</h4>
+                    <p className="text-sm text-gray-500">{project.context || t('projectModal.noContext')}</p>
+                  </div>
                 </div>
               </div>
             </div>
