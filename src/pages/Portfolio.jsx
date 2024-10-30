@@ -52,7 +52,7 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
 
-      <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <main className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="md:flex">
             <div className="md:flex-shrink-0">
