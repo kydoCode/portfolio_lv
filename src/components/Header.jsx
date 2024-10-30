@@ -11,8 +11,8 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-sm">
-      <div className="px-4 sm:px-6 lg:px-8">
+    <header className="bg-white shadow-sm w-full">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/">

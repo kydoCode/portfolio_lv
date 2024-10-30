@@ -18,3 +18,9 @@ img:hover {
 .carousel .control-dots {
   margin-top: 1rem;
 }
+
+/* Ensure the header and footer have consistent padding and margin */
+header, footer {
+  padding: 1rem;
+  margin: 0 auto;
+}
