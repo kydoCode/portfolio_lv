@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronRight, Globe } from 'lucide-react'
+import { ChevronRight, Globe, Laptop, Code, Briefcase, Palette, GraduationCap, Heart, User, Mail } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import ProjectModal from '../components/ProjectModal'
 import projectsData from '../data/repos_github_for_portfolio.json'
 import { Carousel } from 'react-responsive-carousel'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation()
@@ -12,14 +14,14 @@ export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null)
 
   const featuredWork = [
-    { title: t('nav.projects'), description: t('featuredWork.projectsDesc'), icon: 'laptop', link: '/projects' },
-    { title: t('nav.skills'), description: t('featuredWork.skillsDesc'), icon: 'code', link: '/skills' },
-    { title: t('nav.experience'), description: t('featuredWork.experienceDesc'), icon: 'briefcase', link: '/experience' },
-    { title: t('nav.creations'), description: t('featuredWork.creationsDesc'), icon: 'palette', link: '/creations' },
-    { title: t('nav.education'), description: t('featuredWork.educationDesc'), icon: 'graduation-cap', link: '/education' },
-    { title: t('nav.hobbies'), description: t('featuredWork.hobbiesDesc'), icon: 'heart', link: '/hobbies' },
-    { title: t('nav.about'), description: t('featuredWork.aboutDesc'), icon: 'user', link: '/about' },
-    { title: t('nav.contact'), description: t('featuredWork.contactDesc'), icon: 'mail', link: '/contact' },
+    { title: t('nav.projects'), description: t('featuredWork.projectsDesc'), icon: <Laptop />, link: '/projects' },
+    { title: t('nav.skills'), description: t('featuredWork.skillsDesc'), icon: <Code />, link: '/skills' },
+    { title: t('nav.experience'), description: t('featuredWork.experienceDesc'), icon: <Briefcase />, link: '/experience' },
+    { title: t('nav.creations'), description: t('featuredWork.creationsDesc'), icon: <Palette />, link: '/creations' },
+    { title: t('nav.education'), description: t('featuredWork.educationDesc'), icon: <GraduationCap />, link: '/education' },
+    { title: t('nav.hobbies'), description: t('featuredWork.hobbiesDesc'), icon: <Heart />, link: '/hobbies' },
+    { title: t('nav.about'), description: t('featuredWork.aboutDesc'), icon: <User />, link: '/about' },
+    { title: t('nav.contact'), description: t('featuredWork.contactDesc'), icon: <Mail />, link: '/contact' },
   ]
 
   const openModal = (project) => {
@@ -38,44 +40,13 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <span className="text-xl font-bold text-gray-800">{t('header.title')}</span>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              {['Home', 'Projects', 'Skills', 'Experience', 'Creations', 'Education', 'Hobbies', 'About', 'Contact'].map((item) => (
-                <Link
-                  key={item}
-                  to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-                  className="text-gray-500 hover:text-gray-900"
-                >
-                  {t(`nav.${item.toLowerCase()}`)}
-                </Link>
-              ))}
-            </nav>
-            <div className="flex items-center">
-              <Globe className="h-5 w-5 text-gray-400 mr-2" />
-              <select
-                onChange={(e) => changeLanguage(e.target.value)}
-                className="bg-white border-gray-300 rounded-md text-gray-700 text-sm"
-              >
-                <option value="en">English</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-                <option value="zh">中文</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="md:flex">
             <div className="md:flex-shrink-0">
-              <img className="h-full w-full object-cover md:w-48" src="../src/assets/images/avatars/avatar-homepage.jpeg" alt="Profile" />
+              <img className="h-full w-full object-cover md:w-48" src="https://kydoCode.github.io/portfolio_lv/src/assets/images/avatars/avatar-homepage.jpeg" alt="Profile" />
             </div>
             <div className="p-8">
               <div className="text-sm font-semibold text-blue-600">{t('hero.subtitle')}</div>
@@ -101,7 +72,7 @@ export default function Portfolio() {
                 <div className="p-5">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <img src={`/placeholder.svg?text=${item.icon}&width=24&height=24`} alt={item.title} className="h-6 w-6 text-gray-400" />
+                      {item.icon}
                     </div>
                     <div className="ml-5 w-0 flex-1">
                       <dl>
@@ -152,6 +123,8 @@ export default function Portfolio() {
       {modalOpen && selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
+
+      <Footer />
     </div>
   )
 }
