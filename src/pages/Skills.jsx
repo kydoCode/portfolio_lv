@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import softskillsData from '../data/softskills.json'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Skills() {
   const [openSection, setOpenSection] = useState(null)
@@ -12,6 +14,7 @@ export default function Skills() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <Header />
       <div className="mt-8">
         <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
       </div>
@@ -52,6 +55,7 @@ export default function Skills() {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   )
 }
