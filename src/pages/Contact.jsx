@@ -25,6 +25,9 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <div className="mt-8">
+          <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
+        </div>
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Contact Me</h1>
         
         <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
@@ -111,10 +114,6 @@ export default function Contact() {
               </div>
             </form>
           </div>
-        </div>
-        
-        <div className="mt-8">
-          <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
         </div>
       </div>
     </div>
