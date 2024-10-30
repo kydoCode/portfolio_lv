@@ -28,7 +28,7 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div key={index} className="relative">
             <img 
-              src={project.image_path || "/placeholder.svg?height=200&width=300"} 
+              src={project.image_path} 
               alt={project.name} 
               className="hover:opacity-75" 
               onClick={() => openModal(project)} 
