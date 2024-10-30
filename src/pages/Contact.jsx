@@ -25,8 +25,8 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div>
+    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+      <div className="w-full max-w-screen-lg">
         <Header />
         <div className="mt-8">
           <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>

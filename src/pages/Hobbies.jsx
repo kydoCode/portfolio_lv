@@ -8,7 +8,7 @@ export default function Hobbies() {
   return (
     <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
       <Header />
-      <div className="mt-8">
+      <div className="mt-8 w-full max-w-screen-lg">
         <Link to="/" className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md inline-flex items-center">
           Back to Home
         </Link>
