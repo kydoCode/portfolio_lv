@@ -31,7 +31,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
       <div className="mt-8 w-full max-w-screen-lg">
         <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
@@ -49,7 +49,7 @@ export default function Projects() {
                   onClick={() => openModal(project)} 
                 />
               </a>
-              <p className="legend">{project.name}</p>
+              <p className="legend bg-blue-600 text-white">{project.name}</p>
               <ul className="mt-2 space-y-1">
                 {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
                   <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>

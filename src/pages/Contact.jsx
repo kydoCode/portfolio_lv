@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -28,9 +27,6 @@ export default function Contact() {
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
       <div className="w-full max-w-screen-lg">
         <Header />
-        <div className="mt-8">
-          <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
-        </div>
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Contact Me</h1>
         
         <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
