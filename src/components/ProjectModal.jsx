@@ -1,8 +1,34 @@
 import { X, Github, Globe } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react'
 
 export default function ProjectModal({ project, onClose }) {
   const { t } = useTranslation()
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      onClose()
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
+
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
+  const languagePercentages = computeLanguagePercentages(project.languages)
 
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
@@ -31,16 +57,16 @@ export default function ProjectModal({ project, onClose }) {
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.languages')}</h4>
                     <ul className="mt-2 space-y-1">
-                      {Object.entries(project.languages).map(([lang, bytes]) => (
-                        <li key={lang} className="text-sm text-gray-500">{lang}: {bytes} bytes</li>
+                      {Object.entries(languagePercentages).map(([lang, percentage]) => (
+                        <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
                       ))}
                     </ul>
                   </div>
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.technologies')}</h4>
-                    <ul className="mt-2  space-y-1">
+                    <ul className="mt-2 space-y-1">
                       {Object.entries(project.detected_technologies).map(([tech, count]) => (
-                        <li key={tech} className="text-sm text-gray-500">{tech}: {count}</li>
+                        <li key={tech} className="text-sm text-orange-500 bg-orange-100 px-2 py-1 rounded-md inline-block">{tech}: {count}</li>
                       ))}
                     </ul>
                   </div>
@@ -55,6 +81,10 @@ export default function ProjectModal({ project, onClose }) {
                       <li className="text-sm text-gray-500">{t('projectModal.bestPractices')}: {project.modernity_score?.best_practices || t('projectModal.notAvailable')}</li>
                       <li className="text-sm text-gray-500">{t('projectModal.cleanCode')}: {project.modernity_score?.clean_code || t('projectModal.notAvailable')}</li>
                     </ul>
+                  </div>
+                  <div className="mt-4">
+                    <h4 className="text-sm font-medium text-gray-900">{t('projectModal.context')}</h4>
+                    <p className="text-sm text-gray-500">{project.context || t('projectModal.noContext')}</p>
                   </div>
                 </div>
               </div>

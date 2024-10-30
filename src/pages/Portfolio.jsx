@@ -38,8 +38,18 @@ export default function Portfolio() {
     i18n.changeLanguage(lng)
   }
 
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
 
       <main className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -112,6 +122,11 @@ export default function Portfolio() {
                     >
                       {t('latestProjects.viewDetails')}
                     </button>
+                    <ul className="mt-2 space-y-1">
+                      {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
+                        <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
