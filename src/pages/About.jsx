@@ -21,6 +21,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <div className="mt-8">
+          <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
+        </div>
         <h1 className="text-3xl font-bold text-gray-900 mb-8">About Me</h1>
 
         <div className="mb-8">
@@ -115,10 +118,6 @@ export default function About() {
               My goal is to leverage my skills and passion for technology to create impactful digital solutions that solve real-world problems. I'm constantly learning and evolving, always excited to take on new challenges and push the boundaries of what's possible in web development.
             </p>
           </div>
-        </div>
-
-        <div className="mt-8">
-          <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
         </div>
       </div>
     </div>
