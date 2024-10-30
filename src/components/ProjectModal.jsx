@@ -1,8 +1,22 @@
 import { X, Github, Globe } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react'
 
 export default function ProjectModal({ project, onClose }) {
   const { t } = useTranslation()
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      onClose()
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
