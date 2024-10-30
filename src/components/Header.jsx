@@ -15,7 +15,9 @@ export default function Header() {
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <span className="text-xl font-bold text-gray-800">{t('<Dev/>: Code & Coffee')}</span>
+            <Link to="/">
+              <img src="https://i.ibb.co/zsHCctJ/logo-coder.jpg" alt="Logo" className="h-10 w-auto" />
+            </Link>
           </div>
           <nav className="hidden md:flex space-x-8">
             {['Home', 'Projects', 'Skills', 'Experience', 'Creations', 'Education', 'Hobbies', 'About', 'Contact'].map((item) => (
