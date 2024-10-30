@@ -40,12 +40,14 @@ export default function Projects() {
       <Carousel>
         {projectsData.map((project, index) => (
           <div key={index} className="relative">
-            <img 
-              src={project.image_path} 
-              alt={project.name} 
-              className="hover:opacity-75" 
-              onClick={() => openModal(project)} 
-            />
+            <a href={project.site_url} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={project.image_path} 
+                alt={project.name} 
+                className="hover:opacity-75" 
+                onClick={() => openModal(project)} 
+              />
+            </a>
             <p className="legend">{project.name}</p>
             <ul className="mt-2 space-y-1">
               {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
