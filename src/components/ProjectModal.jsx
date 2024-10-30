@@ -18,6 +18,18 @@ export default function ProjectModal({ project, onClose }) {
     }
   }, [])
 
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
+  const languagePercentages = computeLanguagePercentages(project.languages)
+
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -45,8 +57,8 @@ export default function ProjectModal({ project, onClose }) {
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.languages')}</h4>
                     <ul className="mt-2 space-y-1">
-                      {Object.entries(project.languages).map(([lang, bytes]) => (
-                        <li key={lang} className="text-sm text-gray-500">{lang}: {bytes} bytes</li>
+                      {Object.entries(languagePercentages).map(([lang, percentage]) => (
+                        <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
                       ))}
                     </ul>
                   </div>
