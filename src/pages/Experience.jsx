@@ -12,7 +12,7 @@ export default function Experience() {
         <h1 className="text-3xl font-bold mb-4">Experience</h1>
         <ul>
           {experienceData.experience.map((experience, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 bg-white shadow-lg rounded-lg p-6">
               <h2 className="text-xl font-semibold">{experience.poste || experience._type || 'Unknown Position'}</h2>
               <p>{experience.annee || (experience.annees && experience.annees.join(', ')) || 'Unknown Year'}</p>
               <p>{experience.entreprise && experience.entreprise.join(', ')}</p>

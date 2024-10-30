@@ -15,7 +15,7 @@ export default function Education() {
         <h1 className="text-3xl font-bold mb-4">Education</h1>
         <ul>
           {educationData.education.map((education, index) => (
-            <li key={index} className="mb-2">
+            <li key={index} className="mb-2 bg-white shadow-lg rounded-lg p-6">
               <h2 className="text-xl font-semibold">{education.intitule || 'Unknown Title'}</h2>
               <p>{education.annee || 'Unknown Year'}</p>
               <p>{education.etablissement || 'Unknown Institution'}</p>

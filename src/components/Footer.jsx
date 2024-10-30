@@ -3,7 +3,7 @@ import { Github, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-4 px-6 w-full">
+    <footer className="bg-gray-800 text-white py-4 px-6 w-full mt-8">
       <div className="flex justify-between items-center max-w-screen-xl mx-auto">
         <div className="flex items-center space-x-4">
           <a href="https://github.com/kydoCode" target="_blank" rel="noopener noreferrer">
@@ -14,7 +14,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="text-sm">
-          2024 - Sylvain CLEMENT - All rights reserved
+          © 2024 - Sylvain CLEMENT - All rights reserved
         </div>
       </div>
     </footer>
