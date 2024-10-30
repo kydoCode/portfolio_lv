@@ -38,7 +38,8 @@
     },
     "repo_url": "https://github.com/kydoCode/24hour_integrationChalllenge",
     "image_path": "https://i.ibb.co/JkyxC0w/24hour-integration-Challlenge.png",
-    "site_url": "https://kydoCode.github.io/24hour_integrationChalllenge"
+    "site_url": "https://kydoCode.github.io/24hour_integrationChalllenge",
+    "context": "This project was developed as part of a 24-hour code challenge, showcasing the ability to work under tight deadlines and deliver a functional marketing agency website."
   },
   {
     "name": "Délices sucrés",
@@ -75,7 +76,8 @@
     },
     "repo_url": "https://github.com/kydoCode/24hour_integrationChalllenge_projecttwo",
     "image_path": "https://i.ibb.co/Y2HnXNG/24hour-integration-Challlenge-projecttwo.png",
-    "site_url": "https://kydoCode.github.io/24hour_integrationChalllenge_projecttwo"
+    "site_url": "https://kydoCode.github.io/24hour_integrationChalllenge_projecttwo",
+    "context": "This project was developed as part of a 24-hour code challenge, demonstrating the ability to create a visually appealing and functional website for a sweets business."
   },
   {
     "name": "BookAPI",
@@ -107,7 +109,8 @@
     },
     "repo_url": "https://github.com/kydoCode/BookAPI",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/BookAPI.png",
-    "site_url": "https://kydoCode.github.io/BookAPI"
+    "site_url": "https://kydoCode.github.io/BookAPI",
+    "context": "This project involves the development of a Book API, showcasing skills in backend development and API creation using JavaScript and Node.js."
   },
   {
     "name": "brigitte_artgalery_clone",
@@ -156,7 +159,8 @@
     },
     "repo_url": "https://github.com/kydoCode/brigitte_artgalery_clone",
     "image_path": "https://kydoCode.github.io/portfolio_lv/src/assets/images/projects/brigitte_artgalery_clone.png",
-    "site_url": "https://kydoCode.github.io/brigitte_artgalery_clone"
+    "site_url": "https://kydoCode.github.io/brigitte_artgalery_clone",
+    "context": "This project is a clone of an art gallery website, demonstrating skills in HTML and CSS to create a visually appealing and functional website."
   },
   {
     "name": "cookie_cookie",
@@ -183,7 +187,8 @@
     },
     "repo_url": "https://github.com/kydoCode/cookie_cookie",
     "image_path": "https://i.ibb.co/jv1g90R/cookie-cookie.png",
-    "site_url": "https://kydoCode.github.io/cookie_cookie"
+    "site_url": "https://kydoCode.github.io/cookie_cookie",
+    "context": "This project involves the development of a website for a cookie business, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "fonciere_pagerie_malmaison_assignment",
@@ -224,7 +229,8 @@
     },
     "repo_url": "https://github.com/kydoCode/fonciere_pagerie_malmaison_assignment",
     "image_path": "https://i.ibb.co/2F2T5m7/fonciere-pagerie-malmaison-assignment-01.png",
-    "site_url": "https://kydoCode.github.io/fonciere_pagerie_malmaison_assignment"
+    "site_url": "https://kydoCode.github.io/fonciere_pagerie_malmaison_assignment",
+    "context": "This project involves the development of a website for a real estate company, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "GeniArtHub",
@@ -270,7 +276,8 @@
     },
     "repo_url": "https://github.com/kydoCode/GeniArtHub",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/GeniArtHub.png",
-    "site_url": "https://kydoCode.github.io/GeniArtHub"
+    "site_url": "https://kydoCode.github.io/GeniArtHub",
+    "context": "This project involves the development of an art hub website, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
   {
     "name": "GeniArtHub-react-refactor",
@@ -322,7 +329,8 @@
     },
     "repo_url": "https://github.com/kydoCode/GeniArtHub-react-refactor",
     "image_path": "https://i.ibb.co/z8VcZdR/Geni-Art-Hub-react-refactor.png",
-    "site_url": "https://kydoCode.github.io/GeniArtHub-react-refactor"
+    "site_url": "https://kydoCode.github.io/GeniArtHub-react-refactor",
+    "context": "This project involves the refactoring of the GeniArtHub website using React, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
   {
     "name": "hagile_clone",
@@ -362,7 +370,8 @@
     },
     "repo_url": "https://github.com/kydoCode/hagile_clone",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/hagile_clone.png",
-    "site_url": "https://kydoCode.github.io/hagile_clone"
+    "site_url": "https://kydoCode.github.io/hagile_clone",
+    "context": "This project is a clone of the Hagile website, demonstrating skills in HTML and CSS to create a visually appealing and functional website."
   },
   {
     "name": "Home-Key",
@@ -397,7 +406,8 @@
     },
     "repo_url": "https://github.com/kydoCode/Home-Key",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/Home-Key.png",
-    "site_url": "https://kydoCode.github.io/Home-Key"
+    "site_url": "https://kydoCode.github.io/Home-Key",
+    "context": "This project involves the development of a website for a home key business, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "Home-Key-v2",
@@ -437,7 +447,8 @@
     },
     "repo_url": "https://github.com/kydoCode/Home-Key-v2",
     "image_path": "https://i.ibb.co/jyFt7kk/homekeyv2.png",
-    "site_url": "https://kydoCode.github.io/Home-Key-v2"
+    "site_url": "https://kydoCode.github.io/Home-Key-v2",
+    "context": "This project is the second version of the Home-Key website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "my_portfolio",
@@ -472,7 +483,8 @@
     },
     "repo_url": "https://github.com/kydoCode/my_portfolio",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/my_portfolio.png",
-    "site_url": "https://kydoCode.github.io/my_portfolio"
+    "site_url": "https://kydoCode.github.io/my_portfolio",
+    "context": "This project is a personal portfolio website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "oraculus",
@@ -510,7 +522,8 @@
     },
     "repo_url": "https://github.com/kydoCode/oraculus",
     "image_path": "https://i.ibb.co/61yr2XT/oraculus.png",
-    "site_url": "https://kydoCode.github.io/oraculus"
+    "site_url": "https://kydoCode.github.io/oraculus",
+    "context": "This project involves the development of a JavaScript-based website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "oraculus-react-version",
@@ -558,7 +571,8 @@
     },
     "repo_url": "https://github.com/kydoCode/oraculus-react-version",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/oraculus-react-version.png",
-    "site_url": "https://kydoCode.github.io/oraculus-react-version"
+    "site_url": "https://kydoCode.github.io/oraculus-react-version",
+    "context": "This project is a React version of the Oraculus website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "skillfacile-add-dom-events",
@@ -585,7 +599,8 @@
     },
     "repo_url": "https://github.com/kydoCode/skillfacile-add-dom-events",
     "image_path": "https://i.ibb.co/N1mVHjZ/skillfacile-add-dom-events.png",
-    "site_url": "https://kydoCode.github.io/skillfacile-add-dom-events"
+    "site_url": "https://kydoCode.github.io/skillfacile-add-dom-events",
+    "context": "This project involves the development of a website for adding DOM events, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "skillfacile_clone",
@@ -625,7 +640,8 @@
     },
     "repo_url": "https://github.com/kydoCode/skillfacile_clone",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/skillfacile_clone.png",
-    "site_url": "https://kydoCode.github.io/skillfacile_clone"
+    "site_url": "https://kydoCode.github.io/skillfacile_clone",
+    "context": "This project is a clone of the Skillfacile website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
     "name": "vividly",
@@ -658,6 +674,7 @@
     },
     "repo_url": "https://github.com/kydoCode/vividly",
     "image_path": "https://kydoCode.github.io/portfolio_lv/images/vividly.png",
-    "site_url": "https://kydoCode.github.io/vividly"
+    "site_url": "https://kydoCode.github.io/vividly",
+    "context": "This project involves the development of a website for a vivid art business, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   }
 ]
