@@ -52,7 +52,7 @@ export default function ProjectModal({ project, onClose }) {
                   </button>
                 </div>
                 <div className="mt-2">
-                  <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md" />
+                  <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md hover:opacity-75" />
                   <p className="text-sm text-gray-500 mt-2">{project.description || t('projectModal.noDescription')}</p>
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.languages')}</h4>
