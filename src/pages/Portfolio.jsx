@@ -52,7 +52,7 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
 
-      <main className="py-12 px-4 sm:px-6 lg:px-8">
+      <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl">
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="md:flex">
             <div className="md:flex-shrink-0">
@@ -76,7 +76,7 @@ export default function Portfolio() {
 
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900">{t('featuredWork.title')}</h2>
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {featuredWork.map((item, index) => (
               <div key={index} className="bg-white overflow-hidden shadow rounded-lg">
                 <div className="p-5">
@@ -108,7 +108,7 @@ export default function Portfolio() {
 
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900">{t('latestProjects.title')}</h2>
-          <Carousel>
+          <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
             {projectsData.slice(0, 6).map((project, index) => (
               <div key={index} className="bg-white overflow-hidden shadow rounded-lg">
                 <div className="p-5">
