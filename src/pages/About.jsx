@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Code, Globe, Lightbulb } from 'lucide-react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function About() {
   const [selectedSection, setSelectedSection] = useState('')
@@ -21,6 +23,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <Header />
         <div className="mt-8">
           <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
         </div>
@@ -119,6 +122,7 @@ export default function About() {
             </p>
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   )

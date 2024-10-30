@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel'
 import projectsData from '../data/repos_github_for_portfolio.json'
 import ProjectModal from '../components/ProjectModal'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -20,6 +22,7 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <Header />
       <div className="mt-8">
         <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
       </div>
@@ -41,6 +44,7 @@ export default function Projects() {
       {modalOpen && selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
+      <Footer />
     </div>
   )
 }
