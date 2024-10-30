@@ -20,6 +20,16 @@ export default function Projects() {
     setSelectedProject(null)
   }
 
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <Header />
@@ -37,6 +47,11 @@ export default function Projects() {
               onClick={() => openModal(project)} 
             />
             <p className="legend">{project.name}</p>
+            <ul className="mt-2 space-y-1">
+              {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
+                <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
+              ))}
+            </ul>
           </div>
         ))}
       </Carousel>
