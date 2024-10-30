@@ -15,9 +15,9 @@ export default function Education() {
       <ul>
         {educationData.education.map((education, index) => (
           <li key={index} className="mb-2">
-            <h2 className="text-xl font-semibold">{education.intitule}</h2>
-            <p>{education.annee}</p>
-            <p>{education.etablissement}</p>
+            <h2 className="text-xl font-semibold">{education.intitule || 'Unknown Title'}</h2>
+            <p>{education.annee || 'Unknown Year'}</p>
+            <p>{education.etablissement || 'Unknown Institution'}</p>
             {education.mention && <p>{education.mention}</p>}
           </li>
         ))}
