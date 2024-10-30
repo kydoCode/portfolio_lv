@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import creationsData from '../data/creations.json'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Creations() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <Header />
       <div className="mt-8">
         <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
       </div>
@@ -17,6 +20,7 @@ export default function Creations() {
           </li>
         ))}
       </ul>
+      <Footer />
     </div>
   )
 }

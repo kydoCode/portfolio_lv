@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import experienceData from '../data/experience.json'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Experience() {
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+      <Header />
       <h1 className="text-3xl font-bold mb-4">Experience</h1>
       <ul>
         {experienceData.experience.map((experience, index) => (
@@ -17,6 +20,7 @@ export default function Experience() {
         ))}
       </ul>
       <Link to="/" className="text-blue-600 hover:underline mt-4 inline-block">Back to Home</Link>
+      <Footer />
     </div>
   )
 }
