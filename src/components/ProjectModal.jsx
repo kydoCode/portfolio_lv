@@ -64,9 +64,9 @@ export default function ProjectModal({ project, onClose }) {
                   </div>
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.technologies')}</h4>
-                    <ul className="mt-2  space-y-1">
+                    <ul className="mt-2 space-y-1">
                       {Object.entries(project.detected_technologies).map(([tech, count]) => (
-                        <li key={tech} className="text-sm text-gray-500">{tech}: {count}</li>
+                        <li key={tech} className="text-sm text-orange-500 bg-orange-100 px-2 py-1 rounded-md inline-block">{tech}: {count}</li>
                       ))}
                     </ul>
                   </div>
