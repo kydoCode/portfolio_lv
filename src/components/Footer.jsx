@@ -9,7 +9,7 @@ export default function Footer() {
           <a href="https://github.com/kydoCode" target="_blank" rel="noopener noreferrer">
             <Github className="h-6 w-6 text-white" />
           </a>
-          <a href="https://linkedin.com/in/sylvain-clement" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/clementsylvain/" target="_blank" rel="noopener noreferrer">
             <Linkedin className="h-6 w-6 text-white" />
           </a>
         </div>
