@@ -2,35 +2,35 @@
   "experience": [
     {
       "poste": "Développeur web stagiaire",
-      "annee": 2024,
+      "annees": ["2024"],
       "entreprise": "Instant Media"
     },
     {
       "poste": "Professeur Documentaliste",
       "annees": ["2017 - 2021"],
-      "entreprise": ["Éducation Nationale"]
+      "entreprise": "Éducation Nationale"
     },
     {
-      "poste": "",
+      "poste": "Étudiant en Master",
       "annees": ["2013 - 2014"],
-      "details": ["Stages en établissements, représentant étudiants Master"]
+      "details": ["Stages en établissements", "Représentant étudiants Master"]
     },
     {
-      "poste": "",
+      "poste": "Professeur de FLE",
       "annees": ["2011 - 2012"],
-      "entreprise": ["Alliance Française (Strasbourg)"],
-      "_type": "Professeur de FLE"
+      "entreprise": "Alliance Française (Strasbourg)"
     },
     {
-      "_type": "Professeur d'Allemand",
+      "poste": "Professeur d'Allemand",
       "annees": ["2010 - 2012"],
       "details": [
-        "Stages en établissements, représentant étudiants Master",
+        "Stages en établissements",
+        "Représentant étudiants Master",
         "Cours à domicile (Acadomia)"
       ]
     },
     {
-      "_type": "Responsable en Associations",
+      "poste": "Responsable en Associations",
       "annees": ["2015 - 2021"],
       "details": [
         "Album de musique, productions médias (GEM)",

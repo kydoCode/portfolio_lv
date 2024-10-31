@@ -13,10 +13,16 @@ export default function Experience() {
         <ul>
           {experienceData.experience.map((experience, index) => (
             <li key={index} className="mb-2 bg-white shadow-lg rounded-lg p-6">
-              <h2 className="text-xl font-semibold">{experience.poste || experience._type || 'Unknown Position'}</h2>
-              <p>{experience.annee || (experience.annees && experience.annees.join(', ')) || 'Unknown Year'}</p>
-              <p>{experience.entreprise && experience.entreprise.join(', ')}</p>
-              {experience.details && <p>{experience.details.join(', ')}</p>}
+              <h2 className="text-xl font-semibold">{experience.poste}</h2>
+              <p>{experience.annees.join(', ')}</p>
+              {experience.entreprise && <p>{experience.entreprise}</p>}
+              {experience.details && (
+                <ul className="list-disc list-inside mt-2">
+                  {experience.details.map((detail, detailIndex) => (
+                    <li key={detailIndex}>{detail}</li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
