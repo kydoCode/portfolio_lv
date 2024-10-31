@@ -17,9 +17,20 @@ export default function Education() {
           {educationData.education.map((education, index) => (
             <li key={index} className="mb-2 bg-white shadow-lg rounded-lg p-6">
               <h2 className="text-xl font-semibold">{education.intitule || 'Unknown Title'}</h2>
-              <p>{education.annee || 'Unknown Year'}</p>
-              <p>{education.etablissement || 'Unknown Institution'}</p>
-              {education.mention && <p>{education.mention}</p>}
+              <p>{education.annees.join(', ') || 'Unknown Year'}</p>
+              {education.etablissement && <p>{education.etablissement}</p>}
+              {education.etablissements && (
+                <ul className="list-disc list-inside mt-2">
+                  {education.etablissements.map((etab, etabIndex) => (
+                    <li key={etabIndex}>
+                      {etab.nom}
+                      {etab.intitule && ` - ${etab.intitule}`}
+                      {etab.mention && ` (${etab.mention})`}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {education.mention && <p>Mention: {education.mention}</p>}
             </li>
           ))}
         </ul>
