@@ -13,7 +13,7 @@ export default function Education() {
           <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
         </div>
         <h1 className="text-3xl font-bold mb-4">Education</h1>
-        <ul>
+        <ul className="grid grid-cols-2 gap-4">
           {educationData.education.map((education, index) => (
             <li className="mb-2 bg-white shadow-lg rounded-lg p-6 bg-cover bg-center" style={{ backgroundImage: `url(${education.backgroundImage})` }} key={index}>
               <a href={education.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between">
