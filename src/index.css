@@ -47,3 +47,9 @@ header, footer {
   background-size: cover;
   background-position: center;
 }
+
+/* Add CSS class for education logos to maintain aspect ratio */
+.education-logo {
+  object-fit: cover;
+  border-radius: 50%;
+}
