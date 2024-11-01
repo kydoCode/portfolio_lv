@@ -41,9 +41,20 @@ header, footer {
   border: 2px solid #ddd;
   padding: 5px;
 }
-
 /* Add CSS styles for background image on education cards */
 .education-card {
   background-size: cover;
   background-position: center;
+}
+
+/* Add CSS class for education logos to maintain aspect ratio */
+.education-logo {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Add CSS class for logo circle */
+.logo-circle {
+  border-radius: 50%;
+  overflow: hidden;
 }
