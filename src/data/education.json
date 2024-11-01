@@ -3,48 +3,66 @@
     {
       "intitule": "DWWM: Développeur Web et Web Mobile",
       "annees": ["04/2024 - 02/2025"],
-      "etablissement": "La Plateforme_"
+      "etablissement": "La Plateforme_",
+      "url": "https://laplateforme.io/prf-var-devweb/",
+      "logo": ""
     },
     {
       "intitule": "Langage à la carte",
       "annees": ["01/2024 - 04/2024"],
-      "etablissement": "La Plateforme_"
+      "etablissement": "La Plateforme_",
+      "url": "https://laplateforme.io/prf-var-langage-informatique/",
+      "logo": ""
     },
     {
       "intitule": "Apple Foundation Program Advanced - CDA Swift",
       "annees": ["09/2022 - 06/2023"],
-      "etablissement": "Simplon.co"
+      "etablissement": "Simplon.co",
+      "url": "https://www.simplon.co/developpement/advanced-apple-foundation-program",
+      "logo": ""
     },
     {
       "intitule": "Apple Foundation Program Extended",
       "annees": ["06/2022"],
-      "etablissement": "Simplon.co"
+      "etablissement": "Simplon.co",
+      "url": "https://www.simplon.co/developpement/apple-foundation-program",
+      "logo": ""
     },
     {
       "intitule": "Apple Foundation Program Initiation",
       "annees": ["03/2022", "04/2022"],
-      "etablissement": "Simplon.co"
+      "etablissement": "Simplon.co",
+      "url": "https://www.simplon.co/developpement/apple-foundation-program",
+      "logo": ""
     },
     {
-      "intitule": "Master MEEF Professeur Documentaliste",
+      "intitule": "Master 2 MEEF Professeur Documentaliste",
       "annees": ["2017 - 2021"],
-      "etablissement": "Université Lyon III"
+      "etablissement": "Université Lyon III",
+      "url": "https://facdeshumanites.univ-lyon3.fr/master-meef-second-degre-information-documentation-2",
+      "logo": ""
     },
     {
-      "intitule": "Master MEEF Professeur Documentaliste",
+      "intitule": "Master 1 MEEF Professeur Documentaliste",
       "annees": ["2013 - 2014"],
       "etablissement": "INSPE Aix-Marseille",
-      "mention": "Assez Bien"
+      "mention": "Assez Bien",
+      "url": "https://inspe.univ-amu.fr/fr/formations/master-meef-second-degre",
+      "logo": ""
     },
     {
       "intitule": "Master Études germaniques",
       "annees": ["2010 - 2013"],
-      "etablissement": "Université de Strasbourg"
+      "etablissement": "Université de Strasbourg",
+      "url": "https://langues.unistra.fr/formation/masters/master-langues-litteratures-et-civilisations-etrangeres-et-regionales/etudes-allemandes/",
+      "logo": "https://i.ibb.co/DfkZhwQ/logo-unistra.jpg"
     },
     {
       "intitule": "Master Études germaniques",
       "annees": ["2009 - 2010"],
-      "etablissement": "ENS de Lyon"
+      "etablissement": "ENS de Lyon",
+      "url": "https://www.ens-lyon.fr/formation/offre-de-formation/master-2022-2026/etudes-germaniques",
+      "logo": ""
     },
     {
       "intitule": "CPGE, NEOMA & Licence LLCE Allemand",
@@ -52,16 +70,22 @@
       "etablissements": [
         {
           "nom": "Université de Strasbourg",
-          "mention": "Assez Bien"
+          "mention": "Assez Bien",
+          "url": "https://langues.unistra.fr/formation/licences/licence-langues-litteratures-et-civilisations-etrangeres-et-regionales/parcours-monolingues/etudes-allemandes-langues-et-cultures-des-mondes-germaniques-ead/",
+          "logo": "https://i.ibb.co/DfkZhwQ/logo-unistra.jpg"
         },
         {
           "nom": "Sup de Co Reims",
-          "intitule": "Bachelor"
+          "intitule": "Bachelor",
+          "url": "https://neoma-bs.fr/formations/programme-grande-ecole/",
+          "logo": ""
         },
         {
           "nom": "Lycée Masséna",
           "intitule": "Bachelor",
-          "mention": "Très Bien"
+          "mention": "Très Bien",
+          "url": "https://www.lycee-massena.fr/les-cpge/#CPGE_prepa",
+          "logo": "https://i.ibb.co/Vwrw7j1/logo-massena.png"
         }
       ]
     }
