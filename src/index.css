@@ -58,3 +58,34 @@ header, footer {
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* Add CSS styles for the left image in src/pages/Education.jsx to apply a frame and maintain aspect ratio */
+.left-image-frame {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Add specific named class "left-img" for image in circle on left */
+.left-img {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: 5px;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Add specific named class "right-img" for image in frame on right */
+.right-img {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
