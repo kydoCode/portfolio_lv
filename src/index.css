@@ -34,3 +34,16 @@ header, footer {
     padding: 0.5rem;
   }
 }
+
+/* Add CSS styles for circle frame around logos */
+.logo-circle {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  padding: 5px;
+}
+
+/* Add CSS styles for background image on education cards */
+.education-card {
+  background-size: cover;
+  background-position: center;
+}
