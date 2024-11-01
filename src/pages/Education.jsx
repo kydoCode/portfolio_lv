@@ -17,6 +17,7 @@ export default function Education() {
           {educationData.education.map((education, index) => (
             <li className="mb-2 bg-white shadow-lg rounded-lg p-6 bg-cover bg-center" style={{ backgroundImage: `url(${education.backgroundImage})` }} key={index}>
               <a href={education.url} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between">
+                <img src={education.logo} alt={`${education.intitule} logo`} className="h-12 w-12 logo-circle mr-4" />
                 <div>
                   <h2 className="text-xl font-semibold">{education.intitule || 'Unknown Title'}</h2>
                   <p>{education.annees.join(', ') || 'Unknown Year'}</p>
@@ -34,7 +35,6 @@ export default function Education() {
                   )}
                   {education.mention && <p>Mention: {education.mention}</p>}
                 </div>
-                <img src={education.logo} alt={`${education.intitule} logo`} className="h-12 w-12 education-logo ml-4" />
                 <img src={education.logo} alt={`${education.intitule} logo`} className="h-12 w-12 education-logo ml-4" />
               </a>
             </li>
