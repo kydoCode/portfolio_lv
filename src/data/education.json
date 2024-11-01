@@ -2,39 +2,39 @@
   "education": [
     {
       "intitule": "DWWM: Développeur Web et Web Mobile",
-      "annees": ["2024 - 2025"],
+      "annees": ["04/2024 - 02/2025"],
       "etablissement": "La Plateforme_"
     },
     {
       "intitule": "Langage à la carte",
-      "annees": ["2024"],
+      "annees": ["01/2024"],
       "etablissement": "La Plateforme_"
     },
     {
-      "intitule": "Apple Foundation Program",
-      "annees": ["2022 - 2023"],
-      "etablissement": "CDA Swift Apple (Simplon.co)"
-    },
-    {
-      "intitule": "AFP Extended",
-      "annees": ["2022"],
+      "intitule": "Apple Foundation Program Advanced - CDA Swift",
+      "annees": ["09/2022 - 06/2023"],
       "etablissement": "Simplon.co"
     },
     {
-      "intitule": "AFP Initiation",
-      "annees": ["2022"],
+      "intitule": "Apple Foundation Program Extended",
+      "annees": ["06/2022"],
+      "etablissement": "Simplon.co"
+    },
+    {
+      "intitule": "Apple Foundation Program Initiation",
+      "annees": ["03/2022", "04/2022"],
       "etablissement": "Simplon.co"
     },
     {
       "intitule": "Master MEEF Professeur Documentaliste",
-      "annees": ["2013 - 2014"],
-      "etablissement": "ESPE Aix-Marseille",
-      "mention": "Assez Bien"
-    },
-    {
-      "intitule": "Master Études germaniques",
       "annees": ["2017 - 2021"],
       "etablissement": "Université Lyon III"
+    },
+    {
+      "intitule": "Master MEEF Professeur Documentaliste",
+      "annees": ["2013 - 2014"],
+      "etablissement": "INSPE Aix-Marseille",
+      "mention": "Assez Bien"
     },
     {
       "intitule": "Master Études germaniques",
@@ -42,12 +42,12 @@
       "etablissement": "Université de Strasbourg"
     },
     {
-      "intitule": "Formation non spécifiée",
+      "intitule": "Master Études germaniques",
       "annees": ["2009 - 2010"],
       "etablissement": "ENS de Lyon"
     },
     {
-      "intitule": "Formation multiple",
+      "intitule": "CPGE, NEOMA & Licence LLCE Allemand",
       "annees": ["2008 - 2009"],
       "etablissements": [
         {
@@ -57,6 +57,11 @@
         {
           "nom": "Sup de Co Reims",
           "intitule": "Bachelor"
+        },
+        {
+          "nom": "Lycée Masséna",
+          "intitule": "Bachelor",
+          "mention": "Très Bien"
         }
       ]
     }
