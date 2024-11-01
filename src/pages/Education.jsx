@@ -15,23 +15,30 @@ export default function Education() {
         <h1 className="text-3xl font-bold mb-4">Education</h1>
         <ul>
           {educationData.education.map((education, index) => (
-            <li key={index} className="mb-2 bg-white shadow-lg rounded-lg p-6">
-              <h2 className="text-xl font-semibold">{education.intitule || 'Unknown Title'}</h2>
-              <p>{education.annees.join(', ') || 'Unknown Year'}</p>
-              {education.etablissement && <p>{education.etablissement}</p>}
-              {education.etablissements && (
-                <ul className="list-disc list-inside mt-2">
-                  {education.etablissements.map((etab, etabIndex) => (
-                    <li key={etabIndex}>
-                      {etab.nom}
-                      {etab.intitule && ` - ${etab.intitule}`}
-                      {etab.mention && ` (${etab.mention})`}
-                    </li>
-                  ))}
-                </ul>
-              )}
-              {education.mention && <p>Mention: {education.mention}</p>}
-            </li>
+            <a href={education.link} target="_blank" rel="noopener noreferrer" key={index}>
+              <li className="mb-2 bg-white shadow-lg rounded-lg p-6 bg-cover bg-center" style={{ backgroundImage: `url(${education.backgroundImage})` }}>
+                <div className="flex items-center">
+                  <img src={education.logo} alt={`${education.intitule} logo`} className="h-12 w-12 rounded-full mr-4" />
+                  <div>
+                    <h2 className="text-xl font-semibold">{education.intitule || 'Unknown Title'}</h2>
+                    <p>{education.annees.join(', ') || 'Unknown Year'}</p>
+                    {education.etablissement && <p>{education.etablissement}</p>}
+                    {education.etablissements && (
+                      <ul className="list-disc list-inside mt-2">
+                        {education.etablissements.map((etab, etabIndex) => (
+                          <li key={etabIndex}>
+                            {etab.nom}
+                            {etab.intitule && ` - ${etab.intitule}`}
+                            {etab.mention && ` (${etab.mention})`}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {education.mention && <p>Mention: {education.mention}</p>}
+                  </div>
+                </div>
+              </li>
+            </a>
           ))}
         </ul>
         <Link to="/" className="text-blue-600 hover:underline mt-4 inline-block">Back to Home</Link>
