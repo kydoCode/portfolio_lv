@@ -89,3 +89,23 @@ header, footer {
   height: auto;
   object-fit: cover;
 }
+
+/* Add CSS styles for vertical centering and responsive display of images and text on cards in src/pages/Education.jsx */
+.education-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.education-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add media query for 397px breakpoint resolution to display elements on top of each other */
+@media (max-width: 397px) {
+  .education-card {
+    flex-direction: column;
+  }
+}
