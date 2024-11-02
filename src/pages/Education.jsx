@@ -30,7 +30,7 @@ export default function Education() {
         rel="noopener noreferrer" 
         className="relative block p-4 sm:p-6"
       >
-        <div className="flex items-start">
+        <div className="flex items-center flex-wrap">
           <div className="w-16 h-16 flex-shrink-0 mr-4 overflow-hidden rounded-full">
             <img 
               src={education.logo} 
