@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import educationData from '../data/education.json'
+import educationData from '../data/education_light.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
