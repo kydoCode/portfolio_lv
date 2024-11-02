@@ -30,8 +30,8 @@ export default function Education() {
         rel="noopener noreferrer" 
         className="relative block p-4 sm:p-6"
       >
-        <div className="flex items-center flex-wrap">
-          <div className="w-16 h-16 flex-shrink-0 mr-4 overflow-hidden rounded-full">
+        <div className="flex items-center flex-wrap text-center">
+          <div className="w-16 h-16 flex-shrink-0 mr-4 overflow-hidden rounded-full mx-auto">
             <img 
               src={education.favicon} 
               alt={`${education.intitule} logo`} 
@@ -55,7 +55,7 @@ export default function Education() {
             )}
             {education.mention && <p className="text-gray-600">Mention: {education.mention}</p>}
           </div>
-          <div className="w-16 h-16 flex-shrink-0 ml-4 overflow-hidden">
+          <div className="w-16 h-16 flex-shrink-0 ml-4 overflow-hidden mx-auto">
             <img 
               src={education.logo} 
               alt={`${education.intitule} logo`} 
