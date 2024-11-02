@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Fichiers utilisateurs local
+
+data_storage_retrieval.json
