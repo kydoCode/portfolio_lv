@@ -33,7 +33,7 @@ export default function Education() {
         <div className="flex items-center flex-wrap">
           <div className="w-16 h-16 flex-shrink-0 mr-4 overflow-hidden rounded-full">
             <img 
-              src={education.logo} 
+              src={education.favicon} 
               alt={`${education.intitule} logo`} 
               className="w-full h-full object-cover"
             />
