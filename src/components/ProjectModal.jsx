@@ -84,7 +84,7 @@ export default function ProjectModal({ project, onClose }) {
                   </div>
                   <div className="mt-4">
                     <h4 className="text-sm font-medium text-gray-900">{t('projectModal.context')}</h4>
-                    <p className="text-sm text-gray-500">{project.context || t('projectModal.noContext')}</p>
+                    <p className="text-sm text-gray-500">{project.context || t('Context')}</p>
                   </div>
                 </div>
               </div>
