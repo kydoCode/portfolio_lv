@@ -61,7 +61,9 @@ export default function Projects() {
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
       <div className="mt-8 text-center">
-        <Link to="/" className="text-blue-600 hover:underline inline-block">Back to Home</Link>
+        <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+          Back to Home
+        </Link>
       </div>
       <Footer />
     </div>
