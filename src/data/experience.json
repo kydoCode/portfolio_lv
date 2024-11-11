@@ -5,7 +5,7 @@
       "annees": ["2024"],
       "entreprise": "Instant Media",
       "logo": "/path/to/company-logo.png",
-      "url": "https://www.techcompany.com",
+      "url": "https://www.instant-media.fr/",
       "favicon": "/path/to/company-favicon.png"
     },
     {
@@ -13,15 +13,15 @@
       "annees": ["2017 - 2021"],
       "entreprise": "Éducation Nationale",
       "logo": "/path/to/company-logo.png",
-      "url": "https://www.techcompany.com",
+      "url": "https://www.devenirenseignant.gouv.fr/etre-professeur-documentaliste-148",
       "favicon": "/path/to/company-favicon.png"
     },
     {
-      "poste": "Étudiant en Master",
+      "poste": "Professeur Documentaliste stagiaire",
       "annees": ["2013 - 2014"],
       "details": ["Stages en établissements", "Représentant étudiants Master"],
       "logo": "/path/to/company-logo.png",
-      "url": "https://www.techcompany.com",
+      "url": "https://www.devenirenseignant.gouv.fr/etre-professeur-documentaliste-148",
       "favicon": "/path/to/company-favicon.png"
     },
     {
