@@ -119,6 +119,9 @@ export default function About() {
             </p>
           </div>
         </div>
+        <div className="mt-8 text-center">
+          <Link to="/" className="text-blue-600 hover:underline inline-block">Back to Home</Link>
+        </div>
         <Footer />
       </div>
     </div>
