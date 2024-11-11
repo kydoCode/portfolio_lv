@@ -4,33 +4,33 @@
       "poste": "Développeur web stagiaire",
       "annees": ["2024"],
       "entreprise": "Instant Media",
-      "logo": "/path/to/company-logo.png",
+      "logo": "https://i.ibb.co/bsQLWZC/logo.png",
       "url": "https://www.instant-media.fr/",
-      "favicon": "/path/to/company-favicon.png"
+      "favicon": "https://i.ibb.co/bsQLWZC/logo.png"
     },
     {
       "poste": "Professeur Documentaliste",
       "annees": ["2017 - 2021"],
       "entreprise": "Éducation Nationale",
-      "logo": "/path/to/company-logo.png",
+      "logo": "https://i.ibb.co/H4DxbNb/MIN-Education-Nationale-et-Jeunesse-RVB.jpg",
       "url": "https://www.devenirenseignant.gouv.fr/etre-professeur-documentaliste-148",
-      "favicon": "/path/to/company-favicon.png"
+      "favicon": "https://i.ibb.co/q9Wxwwj/favicon.png"
     },
     {
       "poste": "Professeur Documentaliste stagiaire",
       "annees": ["2013 - 2014"],
       "details": ["Stages en établissements", "Représentant étudiants Master"],
-      "logo": "/path/to/company-logo.png",
+      "logo": "https://i.ibb.co/H4DxbNb/MIN-Education-Nationale-et-Jeunesse-RVB.jpg",
       "url": "https://www.devenirenseignant.gouv.fr/etre-professeur-documentaliste-148",
-      "favicon": "/path/to/company-favicon.png"
+      "favicon": "https://i.ibb.co/q9Wxwwj/favicon.png"
     },
     {
       "poste": "Professeur de FLE",
       "annees": ["2011 - 2012"],
       "entreprise": "Alliance Française (Strasbourg)",
-      "logo": "/path/to/company-logo.png",
+      "logo": "https://i.ibb.co/BfHbZY2/Alliance-fran-aise-de-Paris.png",
       "url": "https://www.techcompany.com",
-      "favicon": "/path/to/company-favicon.png"
+      "favicon": "https://i.ibb.co/jhkK0Yw/af.png"
     },
     {
       "poste": "Professeur d'Allemand",
@@ -40,9 +40,9 @@
         "Représentant étudiants Master",
         "Cours à domicile (Acadomia)"
       ],
-      "logo": "/path/to/company-logo.png",
+      "logo": "https://i.ibb.co/H4DxbNb/MIN-Education-Nationale-et-Jeunesse-RVB.jpg",
       "url": "https://www.techcompany.com",
-      "favicon": "/path/to/company-favicon.png"
+      "favicon": "https://i.ibb.co/q9Wxwwj/favicon.png"
     },
     {
       "poste": "Responsable en Associations",
@@ -54,9 +54,9 @@
         "Respo web, com'/SI, commercial, chargé d'enquête (NEOMA)",
         "Président BDE des CPGE (Lycée Masséna)"
       ],
-      "logo": "/path/to/company-logo.png",
+      "logo": "https://i.ibb.co/wpFkHqv/experience-logo-placeholder.png",
       "url": "https://www.techcompany.com",
-      "favicon": "/path/to/company-favicon.png"
+      "favicon": "https://i.ibb.co/rswJC9j/experience-favicon.png"
     }
   ]
 }
