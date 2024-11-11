@@ -17,14 +17,14 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm w-full">
-      <div className="px-4 sm:px-6 lg:px-8 max-w-screen-xl mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link to="/">
               <img src="https://i.ibb.co/zsHCctJ/logo-coder.jpg" alt="Logo" className="h-10 w-auto rounded-full" />
             </Link>
           </div>
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-4 lg:space-x-8">
             <Link to="/" className="text-gray-500 hover:text-gray-900">
               <Home className="h-5 w-5" />
             </Link>
@@ -32,7 +32,7 @@ export default function Header() {
               <Link
                 key={item}
                 to={`/${item.toLowerCase()}`}
-                className="text-gray-500 hover:text-gray-900"
+                className="text-gray-500 hover:text-gray-900 text-sm lg:text-base"
               >
                 {t(`nav.${item.toLowerCase()}`)}
               </Link>
@@ -59,7 +59,7 @@ export default function Header() {
           </div>
         </div>
         {isOpen && (
-          <nav className="md:hidden">
+          <nav className="md:hidden pb-4">
             <Link to="/" className="block text-gray-500 hover:text-gray-900 py-2">
               <Home className="h-5 w-5" />
             </Link>
