@@ -63,6 +63,9 @@ export default function Education() {
             </li>
           ))}
         </ul>
+        <div className="mt-8 text-center">
+          <Link to="/" className="text-blue-600 hover:underline inline-block">Back to Home</Link>
+        </div>
       </main>
       <Footer />
     </div>

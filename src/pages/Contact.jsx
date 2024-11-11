@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -113,6 +114,9 @@ export default function Contact() {
               </div>
             </form>
           </div>
+        </div>
+        <div className="mt-8 text-center">
+          <Link to="/" className="text-blue-600 hover:underline inline-block">Back to Home</Link>
         </div>
         <Footer />
       </div>

@@ -33,9 +33,6 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
-      <div className="mt-8 w-full max-w-screen-lg">
-        <Link to="/" className="text-blue-600 hover:underline">Back to Home</Link>
-      </div>
       <h1 className="text-3xl font-bold mb-4 w-full max-w-screen-lg">Projects</h1>
       <div className="w-full max-w-screen-lg">
         <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
@@ -63,6 +60,9 @@ export default function Projects() {
       {modalOpen && selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
+      <div className="mt-8 text-center">
+        <Link to="/" className="text-blue-600 hover:underline inline-block">Back to Home</Link>
+      </div>
       <Footer />
     </div>
   )
