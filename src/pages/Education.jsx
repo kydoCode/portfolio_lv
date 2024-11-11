@@ -26,14 +26,14 @@ export default function Education() {
                 rel="noopener noreferrer" 
                 className="relative block p-4 sm:p-6"
               >
-                <div className="flex flex-col sm:flex-row items-center">
-                  <div className="w-20 h-20 flex-shrink-0 mb-4 sm:mb-0 sm:mr-6 overflow-hidden rounded-full">
-                    <img 
-                      src={education.favicon} 
-                      alt={`${education.intitule} favicon`} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                  <div className="flex flex-col sm:flex-row items-center">
+                    <div className="w-20 h-20 flex-shrink-0 mb-4 sm:mb-0 sm:mr-6 overflow-hidden rounded-full">
+                      <img 
+                        src={education.favicon} 
+                        alt={`${education.intitule} favicon`} 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   <div className="flex-grow text-center sm:text-left">
                     <h2 className="text-xl font-semibold mb-2">{education.intitule || 'Unknown Title'}</h2>
                     <p className="text-gray-600 mb-1">{education.annees.join(', ') || 'Unknown Year'}</p>
