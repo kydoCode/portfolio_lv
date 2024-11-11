@@ -8,11 +8,6 @@ export default function Hobbies() {
   return (
     <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
       <Header />
-      <div className="mt-8 w-full max-w-screen-lg">
-        <Link to="/" className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md inline-flex items-center">
-          Back to Home
-        </Link>
-      </div>
       <h1 className="text-3xl font-bold mb-4">Hobbies</h1>
       <ul className="space-y-4 w-full max-w-3xl">
         {hobbiesData.hobbies.map((hobby, index) => (
@@ -22,7 +17,9 @@ export default function Hobbies() {
           </li>
         ))}
       </ul>
-      <div className="mt-8"></div>
+      <div className="mt-8 text-center">
+        <Link to="/" className="text-blue-600 hover:underline inline-block">Back to Home</Link>
+      </div>
       <Footer />
     </div>
   )
