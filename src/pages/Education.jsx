@@ -63,6 +63,11 @@ export default function Education() {
             </li>
           ))}
         </ul>
+        <div className="mt-8 text-center">
+          <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+            Back to Home
+          </Link>
+        </div>
       </main>
       <Footer />
     </div>
