@@ -3,22 +3,34 @@
     {
       "poste": "Développeur web stagiaire",
       "annees": ["2024"],
-      "entreprise": "Instant Media"
+      "entreprise": "Instant Media",
+      "logo": "/path/to/company-logo.png",
+      "url": "https://www.techcompany.com",
+      "favicon": "/path/to/company-favicon.png"
     },
     {
       "poste": "Professeur Documentaliste",
       "annees": ["2017 - 2021"],
-      "entreprise": "Éducation Nationale"
+      "entreprise": "Éducation Nationale",
+      "logo": "/path/to/company-logo.png",
+      "url": "https://www.techcompany.com",
+      "favicon": "/path/to/company-favicon.png"
     },
     {
       "poste": "Étudiant en Master",
       "annees": ["2013 - 2014"],
-      "details": ["Stages en établissements", "Représentant étudiants Master"]
+      "details": ["Stages en établissements", "Représentant étudiants Master"],
+      "logo": "/path/to/company-logo.png",
+      "url": "https://www.techcompany.com",
+      "favicon": "/path/to/company-favicon.png"
     },
     {
       "poste": "Professeur de FLE",
       "annees": ["2011 - 2012"],
-      "entreprise": "Alliance Française (Strasbourg)"
+      "entreprise": "Alliance Française (Strasbourg)",
+      "logo": "/path/to/company-logo.png",
+      "url": "https://www.techcompany.com",
+      "favicon": "/path/to/company-favicon.png"
     },
     {
       "poste": "Professeur d'Allemand",
@@ -27,7 +39,10 @@
         "Stages en établissements",
         "Représentant étudiants Master",
         "Cours à domicile (Acadomia)"
-      ]
+      ],
+      "logo": "/path/to/company-logo.png",
+      "url": "https://www.techcompany.com",
+      "favicon": "/path/to/company-favicon.png"
     },
     {
       "poste": "Responsable en Associations",
@@ -38,7 +53,10 @@
         "Respo web, com', animateur radio, assistant régie (ENS de Lyon)",
         "Respo web, com'/SI, commercial, chargé d'enquête (NEOMA)",
         "Président BDE des CPGE (Lycée Masséna)"
-      ]
+      ],
+      "logo": "/path/to/company-logo.png",
+      "url": "https://www.techcompany.com",
+      "favicon": "/path/to/company-favicon.png"
     }
   ]
 }
