@@ -10,6 +10,26 @@ export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
 
+  const openModal = (project) => {
+    setSelectedProject(project)
+    setModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalOpen(false)
+    setSelectedProject(null)
+  }
+
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
@@ -18,13 +38,12 @@ export default function Projects() {
         <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
           {projectsData.map((project, index) => (
             <div key={index} className="relative">
-              <a href={project.site_url} target="_blank" rel="noopener noreferrer">
-                <img 
-                  src={project.image_path} 
-                  alt={project.name} 
-                  className="hover:opacity-75" 
-                />
-              </a>
+              <img 
+                src={project.image_path} 
+                alt={project.name} 
+                className="hover:opacity-75" 
+                onClick={() => openModal(project)} 
+              />
               <p className="legend bg-blue-600 text-white">{project.name}</p>
               <ul className="mt-2 space-y-1">
                 {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
