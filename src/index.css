@@ -109,3 +109,28 @@ header, footer {
     flex-direction: column;
   }
 }
+
+/* Add specific styles for the Radix UI accordion component */
+.radix-accordion__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.radix-accordion__trigger:hover {
+  background-color: #f1f1f1;
+}
+
+.radix-accordion__content {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
