@@ -34,6 +34,16 @@ export default function Portfolio() {
     setSelectedProject(null)
   }
 
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
@@ -101,7 +111,12 @@ export default function Portfolio() {
                   <h3 className="text-lg font-medium text-gray-900">{project.name}</h3>
                   <p className="mt-1 text-sm text-gray-500">{project.description || t('latestProjects.noDescription')}</p>
                   <div className="mt-4">
-                    <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md mb-4" />
+                    <img 
+                      src={project.image_path || "/placeholder.svg?height=200&width=300"} 
+                      alt={project.name} 
+                      className="w-full h-48 object-cover rounded-md mb-4" 
+                      onClick={() => openModal(project)} 
+                    />
                     <ul className="mt-2 space-y-1">
                       {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
                         <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
