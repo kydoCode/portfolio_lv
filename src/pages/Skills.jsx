@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@radix-ui/react-accordion'
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../components/Accordion'
 import softskillsData from '../data/softskills.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
