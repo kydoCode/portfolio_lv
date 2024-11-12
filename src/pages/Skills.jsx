@@ -4,6 +4,7 @@ import Accordion from '../components/Accordion.jsx'
 import softskillsData from '../data/softskills.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import '../index.css'
 
 export default function Skills() {
   return (
@@ -11,9 +12,11 @@ export default function Skills() {
       <Header />
       <h1 className="text-3xl font-bold mb-4">Skills</h1>
       <div className="w-full max-w-screen-lg">
+        <h2 className="text-2xl font-semibold mb-2">Hard Skills</h2>
         <Accordion items={softskillsData.competences.techniques} />
       </div>
-      <div className="w-full max-w-screen-lg">
+      <div className="w-full max-w-screen-lg mt-8">
+        <h2 className="text-2xl font-semibold mb-2">Soft Skills</h2>
         <Accordion items={softskillsData.competences.transversales} />
       </div>
       <div className="mt-8 text-center">
