@@ -9,7 +9,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default function Portfolio() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
 
@@ -32,20 +32,6 @@ export default function Portfolio() {
   const closeModal = () => {
     setModalOpen(false)
     setSelectedProject(null)
-  }
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng)
-  }
-
-  const computeLanguagePercentages = (languages) => {
-    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
-    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
-      if (lang !== 'not available') {
-        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
-      }
-      return acc
-    }, {})
   }
 
   return (
@@ -116,12 +102,6 @@ export default function Portfolio() {
                   <p className="mt-1 text-sm text-gray-500">{project.description || t('latestProjects.noDescription')}</p>
                   <div className="mt-4">
                     <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md mb-4" />
-                    <button
-                      onClick={() => openModal(project)}
-                      className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mb-4"
-                    >
-                      {t('latestProjects.viewDetails')}
-                    </button>
                     <ul className="mt-2 space-y-1">
                       {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
                         <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
