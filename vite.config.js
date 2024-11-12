@@ -7,4 +7,9 @@ export default defineConfig({
     postcss: './postcss.config.cjs',
   },
   base: '/',
+  build: {
+    rollupOptions: {
+      external: ['@radix-ui/react-accordion'],
+    },
+  },
 })
