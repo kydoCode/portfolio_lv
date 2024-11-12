@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      card: {
+        backgroundColor: '#fff',
+        borderRadius: '0.5rem',
+        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+        padding: '1rem',
+        marginBottom: '1rem',
+      },
+    },
   },
   plugins: [],
 }
