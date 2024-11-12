@@ -1,17 +1,23 @@
 import { Accordion as RadixAccordion, AccordionItem, AccordionTrigger, AccordionContent } from '@radix-ui/react-accordion';
+import classNames from 'classnames';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
+import './styles.css';
 
 const Accordion = ({ items }) => {
   return (
-    <RadixAccordion type="single" collapsible>
+    <RadixAccordion type="single" collapsible className="AccordionRoot">
       {items.map((item, index) => (
-        <AccordionItem key={index} value={`item-${index}`}>
-          <AccordionTrigger className="text-xl font-semibold cursor-pointer flex items-center justify-between card">
+        <AccordionItem key={index} value={`item-${index}`} className="AccordionItem">
+          <AccordionTrigger className="AccordionTrigger">
             {item.type}
+            <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </AccordionTrigger>
-          <AccordionContent className="list-disc list-inside bg-white shadow overflow-hidden sm:rounded-lg p-4">
-            {item.details.map((detail, detailIndex) => (
-              <li key={detailIndex} className="text-gray-700">{detail}</li>
-            ))}
+          <AccordionContent className="AccordionContent">
+            <div className="AccordionContentText">
+              {item.details.map((detail, detailIndex) => (
+                <li key={detailIndex} className="text-gray-700">{detail}</li>
+              ))}
+            </div>
           </AccordionContent>
         </AccordionItem>
       ))}
