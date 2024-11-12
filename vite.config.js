@@ -9,7 +9,7 @@ export default defineConfig({
   base: '/',
   build: {
     rollupOptions: {
-      // Removed @radix-ui/react-accordion from external dependencies
+      external: ['@radix-ui/react-accordion'],
     },
   },
 })

@@ -33,7 +33,7 @@ export default function Portfolio() {
     setModalOpen(false)
     setSelectedProject(null)
   }
-
+  
   const computeLanguagePercentages = (languages) => {
     const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
     return Object.entries(languages).reduce((acc, [lang, bytes]) => {
@@ -43,7 +43,6 @@ export default function Portfolio() {
       return acc
     }, {})
   }
-
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
