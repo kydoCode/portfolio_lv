@@ -11,7 +11,7 @@ export default function Skills() {
       <Header />
       <h1 className="text-3xl font-bold mb-4">Skills</h1>
       <div className="w-full max-w-screen-lg">
-        <Accordion type="single" collapsible>
+        <Accordion type="multiple" defaultValue={['item-0', 'item-1']}>
           <h2 className="text-2xl font-semibold mb-2 card">Technical Skills</h2>
           {softskillsData.competences.techniques.map((skill, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
@@ -28,7 +28,7 @@ export default function Skills() {
         </Accordion>
       </div>
       <div className="w-full max-w-screen-lg">
-        <Accordion type="single" collapsible>
+        <Accordion type="multiple" defaultValue={['item-0', 'item-1']}>
           <h2 className="text-2xl font-semibold mb-2 card">Transversal Skills</h2>
           {softskillsData.competences.transversales.map((skill, index) => (
             <AccordionItem key={index} value={`item-${index + softskillsData.competences.techniques.length}`}>
