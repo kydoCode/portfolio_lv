@@ -10,26 +10,6 @@ export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
 
-  const openModal = (project) => {
-    setSelectedProject(project)
-    setModalOpen(true)
-  }
-
-  const closeModal = () => {
-    setModalOpen(false)
-    setSelectedProject(null)
-  }
-
-  const computeLanguagePercentages = (languages) => {
-    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
-    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
-      if (lang !== 'not available') {
-        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
-      }
-      return acc
-    }, {})
-  }
-
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
@@ -43,7 +23,6 @@ export default function Projects() {
                   src={project.image_path} 
                   alt={project.name} 
                   className="hover:opacity-75" 
-                  onClick={() => openModal(project)} 
                 />
               </a>
               <p className="legend bg-blue-600 text-white">{project.name}</p>
