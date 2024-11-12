@@ -17,10 +17,10 @@ export default function Skills() {
       <Header />
       <h1 className="text-3xl font-bold mb-4">Skills</h1>
       <div className="w-full max-w-screen-lg">
-        <h2 className="text-2xl font-semibold mb-2">Technical Skills</h2>
+        <h2 className="text-2xl font-semibold mb-2 card">Technical Skills</h2>
         {softskillsData.competences.techniques.map((skill, index) => (
           <div key={index} className="mb-4">
-            <h3 className="text-xl font-semibold cursor-pointer flex items-center justify-between" onClick={() => toggleSection(index)}>
+            <h3 className="text-xl font-semibold cursor-pointer flex items-center justify-between card" onClick={() => toggleSection(index)}>
               {skill.type}
               {openSection === index ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
             </h3>
@@ -35,10 +35,10 @@ export default function Skills() {
         ))}
       </div>
       <div className="w-full max-w-screen-lg">
-        <h2 className="text-2xl font-semibold mb-2">Transversal Skills</h2>
+        <h2 className="text-2xl font-semibold mb-2 card">Transversal Skills</h2>
         {softskillsData.competences.transversales.map((skill, index) => (
           <div key={index} className="mb-4">
-            <h3 className="text-xl font-semibold cursor-pointer flex items-center justify-between" onClick={() => toggleSection(index + softskillsData.competences.techniques.length)}>
+            <h3 className="text-xl font-semibold cursor-pointer flex items-center justify-between card" onClick={() => toggleSection(index + softskillsData.competences.techniques.length)}>
               {skill.type}
               {openSection === index + softskillsData.competences.techniques.length ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
             </h3>
