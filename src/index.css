@@ -1,3 +1,7 @@
+/* Add CSS styles for the accordion component */
+@import "@radix-ui/colors/black-alpha.css";
+@import "@radix-ui/colors/mauve.css";
+@import "@radix-ui/colors/violet.css";
 @import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 @tailwind base;
@@ -135,10 +139,6 @@ header, footer {
   margin-top: 0.5rem;
 }
 
-/* Add CSS styles for the accordion component */
-@import "@radix-ui/colors/black-alpha.css";
-@import "@radix-ui/colors/mauve.css";
-@import "@radix-ui/colors/violet.css";
 
 /* reset */
 button,
