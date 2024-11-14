@@ -1,6 +1,6 @@
 import { Accordion as RadixAccordion, AccordionItem, AccordionTrigger, AccordionContent } from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import './styles.css';
+import '../index.css';
 
 const Accordion = ({ items }) => {
   return (
