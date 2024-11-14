@@ -6,12 +6,12 @@ const Accordion = ({ items }) => {
   return (
     <RadixAccordion type="single" collapsible className="AccordionRoot">
       {items.map((item, index) => (
-        <AccordionItem key={index} value={`item-${index}`} className="AccordionItem">
-          <AccordionTrigger className="AccordionTrigger">
+        <AccordionItem key={index} value={`item-${index}`} className="AccordionItem" id={`accordion-item-${index}`}>
+          <AccordionTrigger className="AccordionTrigger" id={`accordion-trigger-${index}`}>
             {item.type}
             <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </AccordionTrigger>
-          <AccordionContent className="AccordionContent">
+          <AccordionContent className="AccordionContent" id={`accordion-content-${index}`}>
             <div className="AccordionContentText">
               {item.details.map((detail, detailIndex) => (
                 <li key={detailIndex} className="text-gray-700">{detail}</li>
