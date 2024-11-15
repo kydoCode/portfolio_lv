@@ -241,3 +241,23 @@ h3 {
     height: 0;
   }
 }
+
+/* Add CSS styles for the experience cards */
+.experience-card {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Add CSS styles for the accordion component */
+.accordion-component {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Add CSS styles for the project images in the carousel */
+.carousel-project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

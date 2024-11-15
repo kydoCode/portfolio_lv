@@ -14,7 +14,7 @@ export default function Experience() {
           {experienceData.experience.map((experience, index) => (
             <li 
               key={index}
-              className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105"
+              className="relative bg-white shadow-lg rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 experience-card"
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center opacity-20"
