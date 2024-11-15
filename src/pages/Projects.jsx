@@ -10,6 +10,26 @@ export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
 
+  const openModal = (project) => {
+    setSelectedProject(project)
+    setModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setSelectedProject(null)
+    setModalOpen(false)
+  }
+
+  const computeLanguagePercentages = (languages) => {
+    const totalBytes = Object.values(languages).reduce((acc, bytes) => acc + bytes, 0)
+    return Object.entries(languages).reduce((acc, [lang, bytes]) => {
+      if (lang !== 'not available') {
+        acc[lang] = ((bytes / totalBytes) * 100).toFixed(2)
+      }
+      return acc
+    }, {})
+  }
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
@@ -31,6 +51,12 @@ export default function Projects() {
                   <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
                 ))}
               </ul>
+              <button
+                onClick={() => openModal(project)}
+                className="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+              >
+                View Details
+              </button>
             </div>
           ))}
         </Carousel>

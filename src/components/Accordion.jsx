@@ -7,11 +7,11 @@ const Accordion = ({ items }) => {
     <RadixAccordion type="single" collapsible className="AccordionRoot">
       {items.map((item, index) => (
         <AccordionItem key={index} value={`item-${index}`} className="AccordionItem" id={`accordion-item-${index}`}>
-          <AccordionTrigger className="AccordionTrigger" id={`accordion-trigger-${index}`}>
+          <AccordionTrigger className="AccordionTrigger flex items-center justify-between p-4 bg-gray-100 border-b border-gray-200" id={`accordion-trigger-${index}`}>
             {item.type}
             <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </AccordionTrigger>
-          <AccordionContent className="AccordionContent" id={`accordion-content-${index}`}>
+          <AccordionContent className="AccordionContent p-4 bg-white border-b border-gray-200" id={`accordion-content-${index}`}>
             <div className="AccordionContentText">
               {item.details.map((detail, detailIndex) => (
                 <li key={detailIndex} className="text-gray-700">{detail}</li>
