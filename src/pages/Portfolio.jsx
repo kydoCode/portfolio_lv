@@ -47,7 +47,7 @@ export default function Portfolio() {
       return acc
     }, {})
   }
-
+{/* Fixed issue */}
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
