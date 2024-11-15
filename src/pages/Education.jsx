@@ -18,26 +18,32 @@ export default function Education() {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center opacity-20"
-                style={{ backgroundImage: `url(${education.backgroundImage})` }}
+                style={{ backgroundImage: `url(${education.backgroundImage || ''})` }}
               ></div>
               <a 
-                href={education.url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+                href={education.url || '#'} 
+                target={education.url ? "_blank" : "_self"}
+                rel="noopener noreferrer"
                 className="relative block p-4 sm:p-6"
               >
-                  <div className="flex flex-col sm:flex-row items-center">
-                    <div className="w-20 h-20 flex-shrink-0 mb-4 sm:mb-0 sm:mr-6 overflow-hidden rounded-full">
+                <div className="flex flex-col sm:flex-row items-center">
+                  <div className="w-20 h-20 flex-shrink-0 mb-4 sm:mb-0 sm:mr-6 overflow-hidden rounded-full">
+                    {education.favicon ? (
                       <img 
                         src={education.favicon} 
                         alt={`${education.intitule} favicon`} 
                         className="w-full h-full object-cover"
                       />
-                    </div>
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400">
+                        No Favicon
+                      </div>
+                    )}
+                  </div>
                   <div className="flex-grow text-center sm:text-left">
                     <h2 className="text-xl font-semibold mb-2">{education.intitule || 'Unknown Title'}</h2>
                     <p className="text-gray-600 mb-1">{education.annees.join(', ') || 'Unknown Year'}</p>
-                    {education.etablissement && <p className="text-gray-600 mb-1">{education.etablissement}</p>}
+                    {education.etablissement && <p className="text-gray-600 mb-2">{education.etablissement}</p>}
                     {education.etablissements && (
                       <ul className="list-disc list-inside mt-2 text-gray-600">
                         {education.etablissements.map((etab, etabIndex) => (
@@ -49,14 +55,19 @@ export default function Education() {
                         ))}
                       </ul>
                     )}
-                    {education.mention && <p className="text-gray-600 mt-2">Mention: {education.mention}</p>}
                   </div>
                   <div className="w-20 h-20 flex-shrink-0 mt-4 sm:mt-0 sm:ml-6 overflow-hidden">
-                    <img 
-                      src={education.logo} 
-                      alt={`${education.intitule} logo`} 
-                      className="w-full h-full object-contain"
-                    />
+                    {education.logo ? (
+                      <img 
+                        src={education.logo} 
+                        alt={`${education.intitule} logo`} 
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400">
+                        No Logo
+                      </div>
+                    )}
                   </div>
                 </div>
               </a>
