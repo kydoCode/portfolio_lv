@@ -5,7 +5,7 @@ import softskillsData from '../data/softskills.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../index.css'
-import { Html5, Css3, Javascript, ReactLogo, Tailwind, Bootstrap, Php, Mysql, Nodejs, Express, Vuejs, Python, Postgresql, Nosql, Swift, Swiftui, Kanban, Scrum, Trello, Vscode, Xcode, Github, Blackbox, Copilot, Chatgpt, Linters, Figma } from 'lucide-react'
+import { Html5, Css3, Javascript, ReactLogo, Tailwind, Bootstrap, Php, Mysql, Nodejs, Express, Vuejs, Python, Postgresql, Nosql, Swift, Swiftui, Kanban, Scrum, Trello, Vscode, Xcode, Github, Copilot, Chatgpt, Linters, Figma } from 'lucide-react'
 
 export default function Skills() {
   const [accordionState, setAccordionState] = useState({});
@@ -53,7 +53,6 @@ export default function Skills() {
       case 'vs code': return <Vscode className="h-5 w-5 text-gray-400 mr-2" />;
       case 'xcode': return <Xcode className="h-5 w-5 text-gray-400 mr-2" />;
       case 'github': return <Github className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'blackbox ai': return <Blackbox className="h-5 w-5 text-gray-400 mr-2" />;
       case 'copilot': return <Copilot className="h-5 w-5 text-gray-400 mr-2" />;
       case 'chatgpt': return <Chatgpt className="h-5 w-5 text-gray-400 mr-2" />;
       case 'linters': return <Linters className="h-5 w-5 text-gray-400 mr-2" />;
