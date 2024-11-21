@@ -1,7 +1,7 @@
 import { Accordion as RadixAccordion, AccordionItem, AccordionTrigger, AccordionContent } from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import '../index.css';
-import { Html5, Css3, Javascript, ReactLogo, Tailwind, Php, Mysql, Nodejs, Express, Vuejs, Python, Postgresql, Nosql, Swift, Swiftui, Kanban, Scrum, Trello, Vscode, Xcode, Github, Copilot, Chatgpt, Linters, Figma } from 'lucide-react';
+// import { FileCode2 as Php, FileCode as Vuejs, FileCode as Python, Database as Postgresql, Apple, Trello, Code as Vscode, Github, Figma } from 'lucide-react';
 
 const Accordion = ({ items }) => {
   return (
