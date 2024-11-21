@@ -5,7 +5,7 @@ import softskillsData from '../data/softskills.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../index.css'
-import { Html5, Css3, Javascript, ReactLogo, Tailwind, Bootstrap, Php, Mysql, Nodejs, Express, Vuejs, Python, Postgresql, Nosql, Swift, Swiftui, Kanban, Scrum, Trello, Vscode, Xcode, Github, Copilot, Chatgpt, Linters, Figma } from 'lucide-react'
+// import { Html5, Css3, Javascript, ReactLogo, Tailwind, Bootstrap, Php, Mysql, Nodejs, Express, Vuejs, Python, Postgresql, Nosql, Swift, Swiftui, Kanban, Scrum, Trello, Vscode, Xcode, Github, Copilot, Chatgpt, Linters, Figma } from 'lucide-react'
 
 export default function Skills() {
   const [accordionState, setAccordionState] = useState({});
