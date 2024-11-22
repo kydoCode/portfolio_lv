@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
@@ -7,9 +8,17 @@ export default defineConfig({
     postcss: './postcss.config.cjs',
   },
   base: '/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  optimizeDeps: {
+    include: ['@radix-ui/react-accordion', '@radix-ui/react-icons'],
+  },
   build: {
     rollupOptions: {
-      external: ['@radix-ui/react-accordion'],
+      external: [], // Remove the external configuration
     },
   },
 })
