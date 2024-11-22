@@ -11,8 +11,7 @@ const Accordion = ({ items }) => {
             {item.type}
             <ChevronDownIcon className="AccordionChevron" aria-hidden />
           </AccordionTrigger>
-          <AccordionContent>
-          ntent className="AccordionContent p-4 bg-white border-b border-gray-200" id={`accordion-content-${index}`}>
+          <AccordionContent className="AccordionContent p-4 bg-white border-b border-gray-200" id={`accordion-content-${index}`}>
             <div className="AccordionContentText">
               {item.details.map((detail, detailIndex) => (
                 <li key={detailIndex} className="text-gray-700 flex items-center">
