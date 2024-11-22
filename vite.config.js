@@ -18,7 +18,6 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: [], // Remove the external configuration
     },
   },
 })
