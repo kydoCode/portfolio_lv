@@ -55,13 +55,13 @@ export default function About() {
 
         <div id="about-me" className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
           <div className="px-4 py-5 sm:p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">John Doe</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Sylvain</h2>
             <p className="text-gray-600 mb-6">
               Passionate Full Stack Developer | Problem Solver | Tech Enthusiast
             </p>
             <div className="prose max-w-none text-gray-500">
               <p>
-                Hello! I'm John Doe, a full stack developer with a passion for creating elegant, efficient, and user-friendly web applications. With 5 years of experience in the tech industry, I've honed my skills in both front-end and back-end development, always staying up-to-date with the latest technologies and best practices.
+                Hello! I'm Sylvain, a full stack developer with a passion for creating elegant, efficient, and user-friendly web applications. With several years of experience in the tech industry, I've honed my skills in both front-end and back-end development, always staying up-to-date with the latest technologies and best practices.
               </p>
               <p className="mt-4">
                 My journey in tech began with a fascination for how things work, which led me to pursue a degree in Computer Science. Since then, I've worked on a diverse range of projects, from small business websites to large-scale enterprise applications, always striving to deliver high-quality solutions that meet and exceed client expectations.
