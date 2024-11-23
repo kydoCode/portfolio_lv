@@ -5,7 +5,17 @@ import softskillsData from '../data/softskills.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import '../index.css'
-import { Html5, Css3, Javascript, ReactLogo, Tailwind, Bootstrap, Php, Mysql, Nodejs, Express, Vuejs, Python, Postgresql, Nosql, Swift, Swiftui, Kanban, Scrum, Trello, Vscode, Xcode, Github, Copilot, Chatgpt, Linters, Figma } from 'lucide-react'
+import { 
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaVuejs, FaPhp, FaNodeJs, FaPython, 
+  FaDatabase, FaSwift, FaTrello, FaGithub, FaFigma
+} from 'react-icons/fa'
+import { 
+  SiTailwindcss, SiBootstrap, SiMysql, SiExpress, SiPostgresql, 
+  SiMongodb, SiSwift, SiVisualstudiocode, SiXcode, SiGithubcopilot
+} from 'react-icons/si'
+import { BsKanban } from 'react-icons/bs'
+import { GiScrum } from 'react-icons/gi'
+import { TbBrandChatgpt } from 'react-icons/tb'
 
 export default function Skills() {
   const [accordionState, setAccordionState] = useState({});
@@ -31,32 +41,32 @@ export default function Skills() {
 
   const getIcon = (skill) => {
     switch (skill.toLowerCase()) {
-      case 'html': return <Html5 className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'css': return <Css3 className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'javascript': return <Javascript className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'react': return <ReactLogo className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'tailwind css': return <Tailwind className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'bootstrap': return <Bootstrap className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'php': return <Php className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'mysql': return <Mysql className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'node.js': return <Nodejs className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'express.js': return <Express className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'vue.js': return <Vuejs className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'python': return <Python className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'postgresql': return <Postgresql className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'nosql': return <Nosql className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'swift': return <Swift className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'swiftui': return <Swiftui className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'kanban': return <Kanban className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'scrum': return <Scrum className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'trello': return <Trello className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'vs code': return <Vscode className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'xcode': return <Xcode className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'github': return <Github className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'copilot': return <Copilot className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'chatgpt': return <Chatgpt className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'linters': return <Linters className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'figma': return <Figma className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'html': return <FaHtml5 className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'css': return <FaCss3Alt className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'javascript': return <FaJs className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'react': return <FaReact className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'tailwind css': return <SiTailwindcss className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'bootstrap': return <SiBootstrap className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'php': return <FaPhp className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'mysql': return <SiMysql className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'node.js': return <FaNodeJs className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'express.js': return <SiExpress className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'vue.js': return <FaVuejs className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'python': return <FaPython className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'postgresql': return <SiPostgresql className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'nosql': return <SiMongodb className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'swift': return <FaSwift className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'swiftui': return <SiSwift className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'kanban': return <BsKanban className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'scrum': return <GiScrum className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'trello': return <FaTrello className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'vs code': return <SiVisualstudiocode className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'xcode': return <SiXcode className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'github': return <FaGithub className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'copilot': return <SiGithubcopilot className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'chatgpt': return <TbBrandChatgpt className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'linters': return <FaDatabase className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'figma': return <FaFigma className="h-5 w-5 text-gray-400 mr-2" />;
       default: return null;
     }
   };
