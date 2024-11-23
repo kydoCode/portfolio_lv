@@ -28,7 +28,6 @@ export default function Portfolio() {
     );
   };
 
-
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl">
