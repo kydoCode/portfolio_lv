@@ -1,226 +1,24 @@
-/* Add CSS styles for the accordion component */
-@import "@radix-ui/colors/black-alpha.css";
-@import "@radix-ui/colors/mauve.css";
-@import "@radix-ui/colors/violet.css";
-@import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Add CSS for opacity on hover for project images */
-img:hover {
-  opacity: 0.75;
-}
-
-/* Add margin between the project image and the view details button */
-.carousel .slide img {
-  margin-bottom: 1rem;
-}
-
-/* Add margin between the view details button and the dots representing images */
-.carousel .control-dots {
-  margin-top: 1rem;
-}
-
-/* Ensure the header and footer have consistent padding and margin */
-header, footer {
-  padding: 1rem;
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px;
-}
-
-/* Add responsive design for header and footer */
-@media (max-width: 768px) {
-  header, footer {
-    padding: 0.5rem;
-  }
-}
-
-/* Add CSS styles for circle frame around logos */
-.logo-circle {
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  padding: 5px;
-}
-/* Add CSS styles for background image on education cards */
-.education-card {
-  background-size: cover;
-  background-position: center;
-}
-
-/* Add CSS class for education logos to maintain aspect ratio */
-.education-logo {
-  object-fit: cover;
-  width: 100%;
-}
-
-/* Add CSS class for logo circle */
-.logo-circle {
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-/* Add CSS styles for the left image in src/pages/Education.jsx to apply a frame and maintain aspect ratio */
-.left-image-frame {
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Add specific named class "left-img" for image in circle on left */
-.left-img {
-  border-radius: 50%;
-  border: 2px solid #ddd;
-  padding: 5px;
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Add specific named class "right-img" for image in frame on right */
-.right-img {
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Add CSS styles for vertical centering and responsive display of images and text on cards in src/pages/Education.jsx */
-.education-card {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.education-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Add media query for 397px breakpoint resolution to display elements on top of each other */
-@media (max-width: 397px) {
-  .education-card {
-    flex-direction: column;
-  }
-}
-
-/* Add specific styles for the Radix UI accordion component */
-.radix-accordion__trigger {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.radix-accordion__trigger:hover {
-  background-color: #f1f1f1;
-}
-
-.radix-accordion__content {
-  padding: 1rem;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-
-/* reset */
-button,
-h3 {
-  all: unset;
-}
-
-.AccordionRoot {
-  border-radius: 6px;
-  width: 300px;
-  background-color: var(--mauve-6);
-  box-shadow: 0 2px 10px var(--black-a4);
-}
-
-.AccordionItem {
-  overflow: hidden;
-  margin-top: 1px;
-}
-
-.AccordionItem:first-child {
-  margin-top: 0;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.AccordionItem:last-child {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.AccordionItem:focus-within {
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0 0 2px var(--mauve-12);
-}
-
-.AccordionHeader {
-  display: flex;
-}
-
-.AccordionTrigger {
-  font-family: inherit;
-  background-color: transparent;
-  padding: 0 20px;
-  height: 45px;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 15px;
-  line-height: 1;
-  color: var(--violet-11);
-  box-shadow: 0 1px 0 var(--mauve-6);
-  background-color: white;
-}
-
-.AccordionTrigger:hover {
-  background-color: var(--mauve-2);
-}
-
 .AccordionContent {
   overflow: hidden;
-  font-size: 15px;
-  color: var(--mauve-11);
-  background-color: var(--mauve-2);
-}
-.AccordionContent[data-state="open"] {
-  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
-}
-.AccordionContent[data-state="closed"] {
-  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
 }
 
-.AccordionContentText {
-  padding: 15px 20px;
+.AccordionContent[data-state='open'] {
+  animation: slideDown 300ms ease-out;
+}
+
+.AccordionContent[data-state='closed'] {
+  animation: slideUp 300ms ease-out;
 }
 
 .AccordionChevron {
-  color: var(--violet-10);
-  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  transition: transform 300ms;
 }
-.AccordionTrigger[data-state="open"] > .AccordionChevron {
+
+.AccordionTrigger[data-state='open'] > .AccordionChevron {
   transform: rotate(180deg);
 }
 
@@ -240,37 +38,4 @@ h3 {
   to {
     height: 0;
   }
-}
-
-/* Add CSS styles for the experience cards */
-.experience-card {
-  background-size: cover;
-  background-position: center;
-}
-
-/* Add CSS styles for the accordion component */
-.accordion-component {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* Add CSS styles for the project images in the carousel */
-.carousel-project-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Add CSS styles to center the content in the Skills section */
-.skills-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* Add CSS styles to ensure the background remains white when the text is too short to fill the entire width */
-.skills-section .accordion-component {
-  background-color: white;
 }
