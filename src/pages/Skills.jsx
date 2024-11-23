@@ -7,14 +7,13 @@ import Footer from '../components/Footer'
 import '../index.css'
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaVuejs, FaPhp, FaNodeJs, FaPython, 
-  FaDatabase, FaSwift, FaTrello, FaGithub, FaFigma, FaProjectDiagram
+  FaSwift, FaTrello, FaGithub, FaFigma, FaProjectDiagram, FaRobot
 } from 'react-icons/fa'
 import { 
   SiTailwindcss, SiBootstrap, SiMysql, SiExpress, SiPostgresql, 
   SiMongodb, SiSwift, SiVisualstudiocode, SiXcode, SiGithubcopilot, SiEslint
 } from 'react-icons/si'
 import { BsKanban } from 'react-icons/bs'
-import { TbBrandChatgpt } from 'react-icons/tb'
 
 export default function Skills() {
   const [accordionState, setAccordionState] = useState({});
@@ -62,7 +61,7 @@ export default function Skills() {
       case 'xcode': return <SiXcode className="h-5 w-5 text-gray-400 mr-2" />;
       case 'github': return <FaGithub className="h-5 w-5 text-gray-400 mr-2" />;
       case 'copilot': return <SiGithubcopilot className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'chatgpt': return <TbBrandChatgpt className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'chatgpt': return <FaRobot className="h-5 w-5 text-gray-400 mr-2" />;
       case 'linters': return <SiEslint className="h-5 w-5 text-gray-400 mr-2" />;
       case 'figma': return <FaFigma className="h-5 w-5 text-gray-400 mr-2" />;
       default: return null;
