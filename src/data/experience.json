@@ -6,7 +6,12 @@
       "entreprise": "Instant Media",
       "logo": "https://i.ibb.co/bsQLWZC/logo.png",
       "url": "https://www.instant-media.fr/",
-      "favicon": "https://i.ibb.co/bsQLWZC/logo.png"
+      "favicon": "https://i.ibb.co/bsQLWZC/logo.png",
+      "details": [
+        "Développement d'outils CRUD pour la gestion des avis et le suivi des mails clients.",
+        "Participation à des réunions d'équipe pour discuter des exigences et des solutions techniques.",
+        "Rédaction de documentation technique pour les fonctionnalités développées."
+      ]
     },
     {
       "poste": "Professeur Documentaliste",
@@ -14,12 +19,21 @@
       "entreprise": "Éducation Nationale",
       "logo": "https://i.ibb.co/H4DxbNb/MIN-Education-Nationale-et-Jeunesse-RVB.jpg",
       "url": "https://www.devenirenseignant.gouv.fr/etre-professeur-documentaliste-148",
-      "favicon": "https://i.ibb.co/q9Wxwwj/favicon.png"
+      "favicon": "https://i.ibb.co/q9Wxwwj/favicon.png",
+      "details": [
+        "Gestion et organisation des ressources documentaires.",
+        "Formation des élèves à la recherche documentaire et à l'utilisation des outils numériques.",
+        "Participation à des projets pédagogiques et culturels."
+      ]
     },
     {
       "poste": "Professeur Documentaliste stagiaire",
       "annees": ["2013 - 2014"],
-      "details": ["Stages en établissements", "Représentant étudiants Master"],
+      "details": [
+        "Stages en établissements",
+        "Représentant étudiants Master",
+        "Participation à des projets de numérisation des ressources documentaires."
+      ],
       "logo": "https://i.ibb.co/H4DxbNb/MIN-Education-Nationale-et-Jeunesse-RVB.jpg",
       "url": "https://www.devenirenseignant.gouv.fr/etre-professeur-documentaliste-148",
       "favicon": "https://i.ibb.co/q9Wxwwj/favicon.png"
@@ -30,7 +44,12 @@
       "entreprise": "Alliance Française (Strasbourg)",
       "logo": "https://i.ibb.co/BfHbZY2/Alliance-fran-aise-de-Paris.png",
       "url": "https://www.afstrasbourg.eu/",
-      "favicon": "https://i.ibb.co/jhkK0Yw/af.png"
+      "favicon": "https://i.ibb.co/jhkK0Yw/af.png",
+      "details": [
+        "Enseignement du français langue étrangère à des étudiants internationaux.",
+        "Organisation d'activités culturelles pour promouvoir la langue et la culture françaises.",
+        "Évaluation des progrès des étudiants et adaptation des cours en conséquence."
+      ]
     },
     {
       "poste": "Professeur d'Allemand",
@@ -38,7 +57,9 @@
       "details": [
         "Stages en établissements",
         "Représentant étudiants Master",
-        "Cours à domicile (Acadomia)"
+        "Cours à domicile (Acadomia)",
+        "Enseignement de l'allemand à des élèves de différents niveaux.",
+        "Création de supports pédagogiques adaptés aux besoins des élèves."
       ],
       "logo": "https://i.ibb.co/H4DxbNb/MIN-Education-Nationale-et-Jeunesse-RVB.jpg",
       "url": "https://www.education.gouv.fr/les-langues-vivantes-etrangeres-et-regionales-11249",
@@ -52,7 +73,10 @@
         "PSC1, BEPS, IRR (Croix-Rouge)",
         "Respo web, com', animateur radio, assistant régie (ENS de Lyon)",
         "Respo web, com'/SI, commercial, chargé d'enquête (NEOMA)",
-        "Président BDE des CPGE (Lycée Masséna)"
+        "Président BDE des CPGE (Lycée Masséna)",
+        "Organisation d'événements et de projets associatifs.",
+        "Gestion des équipes et des ressources.",
+        "Communication et promotion des activités associatives."
       ],
       "logo": "https://i.ibb.co/wpFkHqv/experience-logo-placeholder.png",
       "url": "https://www.trensistor.fr/author/sclement/",
