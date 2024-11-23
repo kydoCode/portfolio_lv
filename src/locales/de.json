@@ -47,5 +47,13 @@
     "viewOnGithub": "Auf GitHub ansehen",
     "visitSite": "Website besuchen",
     "close": "Schließen"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin Sylvain, ein leidenschaftlicher Full-Stack-Entwickler mit umfangreicher Erfahrung in der Webanwendungsentwicklung."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "message": "Senden Sie mir eine Nachricht für Fragen oder Kooperationen."
   }
 }
