@@ -11,25 +11,25 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Hello, moi c'est Sylvain",
+    "title": "Hello ! Moi c'est Sylvain",
     "subtitle": "Développeur Full Stack",
-    "description": "Je suis un développeur full stack passionné basé en France. J'aime créer des applications web belles et fonctionnelles.",
-    "cta": "Voir le portfolio"
+    "description": "Je suis un développeur passionné basé dans le Sud de la France. J’aime créer des applications web belles et fonctionnelles.",
+    "cta": "Voir le Portfolio"
   },
   "featuredWork": {
     "title": "Mon Parcours Professionnel",
     "viewButton": "Voir",
-    "projectsDesc": "Explorez mes projets et voyez sur quoi j'ai travaillé.",
-    "skillsDesc": "Découvrez les compétences et technologies dans lesquelles j'excelle.",
-    "experienceDesc": "Découvrez mon expérience professionnelle et mon parcours de carrière.",
-    "creationsDesc": "Découvrez mes œuvres créatives et mes projets personnels.",
-    "educationDesc": "Découvrez mon parcours éducatif et mes qualifications.",
+    "projectsDesc": "Explorez mes projets et découvrez sur quoi j'ai travaillé.",
+    "skillsDesc": "Découvrez les compétences et technologies que je maîtrise.",
+    "experienceDesc": "Apprenez-en plus sur mon expérience professionnelle et mon parcours de carrière.",
+    "creationsDesc": "Découvrez mes œuvres créatives et projets personnels.",
+    "educationDesc": "Découvrez mon parcours académique et mes qualifications.",
     "hobbiesDesc": "Découvrez mes loisirs et intérêts en dehors du travail.",
     "aboutDesc": "En savoir plus sur moi et mon histoire.",
     "contactDesc": "Contactez-moi pour des collaborations ou des demandes."
   },
   "latestProjects": {
-    "title": "Projets Récents",
+    "title": "Derniers Projets",
     "viewDetails": "Voir les détails",
     "noDescription": "Aucune description disponible."
   },
@@ -39,13 +39,13 @@
     "technologies": "Technologies",
     "htmlVersion": "Version HTML",
     "notSpecified": "Non spécifié",
-    "modernityScore": "Score de modernité",
+    "modernityScore": "Score de Modernité",
     "accessibility": "Accessibilité",
-    "bestPractices": "Meilleures pratiques",
-    "cleanCode": "Code propre",
+    "bestPractices": "Bonnes Pratiques",
+    "cleanCode": "Clean Code",
     "notAvailable": "Non disponible",
     "viewOnGithub": "Voir sur GitHub",
-    "visitSite": "Visiter le site",
+    "visitSite": "Visiter le Site",
     "close": "Fermer"
   }
 }

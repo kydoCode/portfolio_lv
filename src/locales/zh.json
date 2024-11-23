@@ -7,34 +7,34 @@
     "creations": "创作",
     "education": "教育",
     "hobbies": "爱好",
-    "about": "关于",
+    "about": "关于我",
     "contact": "联系"
   },
   "hero": {
-    "title": "你好，我是John Doe",
-    "subtitle": "全栈开发工程师",
-    "description": "我是一名热情的全栈开发工程师，常驻纽约。我喜欢创建美观且功能强大的网络应用程序。",
+    "title": "你好，我是 Sylvain",
+    "subtitle": "全栈开发者",
+    "description": "我是一名热爱编程的全栈开发者，位于法国南部。我喜欢创建美观且实用的网站应用程序。",
     "cta": "查看作品集"
   },
   "featuredWork": {
-    "title": "精选作品",
+    "title": "我的职业历程",
     "viewButton": "查看",
     "projectsDesc": "探索我的项目，看看我在做什么。",
     "skillsDesc": "发现我擅长的技能和技术。",
-    "experienceDesc": "了解我的职业经历和职业生涯。",
-    "creationsDesc": "查看我的创意作品和个人项目。",
+    "experienceDesc": "了解我的职业经验和职业历程。",
+    "creationsDesc": "查看我的创作和个人项目。",
     "educationDesc": "了解我的教育背景和资格。",
-    "hobbiesDesc": "了解我在工作之外的爱好和兴趣。",
-    "aboutDesc": "阅读更多关于我的故事。",
+    "hobbiesDesc": "了解我的工作之外的兴趣和爱好。",
+    "aboutDesc": "阅读更多关于我和我的故事。",
     "contactDesc": "联系我进行合作或咨询。"
   },
   "latestProjects": {
     "title": "最新项目",
     "viewDetails": "查看详情",
-    "noDescription": "没有可用的描述。"
+    "noDescription": "暂无描述。"
   },
   "projectModal": {
-    "noDescription": "没有可用的描述。",
+    "noDescription": "暂无描述。",
     "languages": "语言",
     "technologies": "技术",
     "htmlVersion": "HTML版本",
@@ -42,7 +42,7 @@
     "modernityScore": "现代性评分",
     "accessibility": "可访问性",
     "bestPractices": "最佳实践",
-    "cleanCode": "干净代码",
+    "cleanCode": "清晰代码",
     "notAvailable": "不可用",
     "viewOnGithub": "在GitHub上查看",
     "visitSite": "访问网站",
