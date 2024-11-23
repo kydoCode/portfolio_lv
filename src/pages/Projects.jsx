@@ -80,7 +80,7 @@ export default function Projects() {
       <section>
           <h2 className="text-2xl font-semibold mb-4">All Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {reposData.map((project, index) => (
+            {projectsData.map((project, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
                   src={project.image || '/placeholder.svg?height=200&width=300'}
