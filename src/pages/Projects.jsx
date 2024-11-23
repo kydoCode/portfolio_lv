@@ -5,6 +5,7 @@ import projectsData from '../data/repos_github_for_portfolio.json'
 import ProjectModal from '../components/ProjectModal'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -33,34 +34,45 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
-      <h1 className="text-3xl font-bold mb-4 w-full max-w-screen-lg">Projects</h1>
-      <div className="w-full max-w-screen-lg">
-        <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
-          {projectsData.map((project, index) => (
-            <div key={index} className="relative">
-              <a href={project.site_url} target="_blank" rel="noopener noreferrer">
-                <img 
-                  src={project.image_path} 
-                  alt={project.name} 
-                  className="hover:opacity-75" 
-                />
-              </a>
-              <p className="legend bg-blue-600 text-white">{project.name}</p>
-              <ul className="mt-2 space-y-1">
-                {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
-                  <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
-                ))}
-              </ul>
-              <button
-                onClick={() => openModal(project)}
-                className="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700"
-              >
-                View Details
-              </button>
-            </div>
-          ))}
-        </Carousel>
-      </div>
+      <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl">
+        <h1 className="text-3xl font-bold mb-6">Projects</h1>
+        <div className="w-full max-w-4xl mx-auto">
+          <Carousel 
+            showThumbs={false} 
+            showStatus={false} 
+            infiniteLoop 
+            useKeyboardArrows
+            className="custom-carousel"
+          >
+            {projectsData.map((project, index) => (
+              <div key={index} className="relative bg-white rounded-lg shadow-lg overflow-hidden">
+                <a href={project.site_url} target="_blank" rel="noopener noreferrer">
+                  <img 
+                    src={project.image_path || "/placeholder.svg?height=300&width=400"} 
+                    alt={project.name} 
+                    className="w-full h-64 object-cover hover:opacity-75 transition-opacity" 
+                  />
+                </a>
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">{project.name}</h2>
+                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <ul className="mb-4 space-y-1">
+                    {Object.entries(computeLanguagePercentages(project.languages)).map(([lang, percentage]) => (
+                      <li key={lang} className="text-sm text-gray-500">{lang}: {percentage}%</li>
+                    ))}
+                  </ul>
+                  <button
+                    onClick={() => openModal(project)}
+                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </main>
 
       {modalOpen && selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />

@@ -39,3 +39,27 @@
     height: 0;
   }
 }
+
+/* Custom styles for the carousel */
+.custom-carousel .carousel-root {
+  width: 100%;
+}
+
+.custom-carousel .carousel .slide {
+  background: none;
+}
+
+.custom-carousel .carousel .slide img {
+  width: 100%;
+  height: auto;
+}
+
+.custom-carousel .carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+/* Ensure buttons have consistent styling */
+.btn-primary {
+  @apply bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors;
+}
