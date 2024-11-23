@@ -6,6 +6,7 @@ import ProjectModal from '../components/ProjectModal'
 import { Carousel } from 'react-responsive-carousel'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import reposData from '../data/repos_github_for_portfolio.json'
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation()
@@ -111,11 +112,6 @@ export default function Portfolio() {
                   <p className="mt-1 text-sm text-gray-500">{project.description || t('latestProjects.noDescription')}</p>
                   <div className="mt-4">
                     <img src={project.image_path || "/placeholder.svg?height=200&width=300"} alt={project.name} className="w-full h-48 object-cover rounded-md mb-4" />
-                    <img
-                      src={project.image || '/placeholder.svg?height=200&width=300'}
-                      alt={project.name}
-                      className="w-full h-48 object-cover rounded-md mb-4"
-                    />
                     <button
                       onClick={() => openModal(project)}
                       className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mb-4"
