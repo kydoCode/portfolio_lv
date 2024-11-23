@@ -7,14 +7,13 @@ import Footer from '../components/Footer'
 import '../index.css'
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaVuejs, FaPhp, FaNodeJs, FaPython, 
-  FaDatabase, FaSwift, FaTrello, FaGithub, FaFigma
+  FaDatabase, FaSwift, FaTrello, FaGithub, FaFigma, FaProjectDiagram
 } from 'react-icons/fa'
 import { 
   SiTailwindcss, SiBootstrap, SiMysql, SiExpress, SiPostgresql, 
   SiMongodb, SiSwift, SiVisualstudiocode, SiXcode, SiGithubcopilot
 } from 'react-icons/si'
 import { BsKanban } from 'react-icons/bs'
-import { GiScrum } from 'react-icons/gi'
 import { TbBrandChatgpt } from 'react-icons/tb'
 
 export default function Skills() {
@@ -58,7 +57,7 @@ export default function Skills() {
       case 'swift': return <FaSwift className="h-5 w-5 text-gray-400 mr-2" />;
       case 'swiftui': return <SiSwift className="h-5 w-5 text-gray-400 mr-2" />;
       case 'kanban': return <BsKanban className="h-5 w-5 text-gray-400 mr-2" />;
-      case 'scrum': return <GiScrum className="h-5 w-5 text-gray-400 mr-2" />;
+      case 'scrum': return <FaProjectDiagram className="h-5 w-5 text-gray-400 mr-2" />;
       case 'trello': return <FaTrello className="h-5 w-5 text-gray-400 mr-2" />;
       case 'vs code': return <SiVisualstudiocode className="h-5 w-5 text-gray-400 mr-2" />;
       case 'xcode': return <SiXcode className="h-5 w-5 text-gray-400 mr-2" />;
