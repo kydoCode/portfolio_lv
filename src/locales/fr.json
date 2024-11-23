@@ -11,7 +11,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Hello ! Moi c'est Sylvain",
+    "title": "Hello, moi c'est Sylvain",
     "subtitle": "Développeur Full Stack",
     "description": "Je suis un développeur passionné basé dans le Sud de la France. J’aime créer des applications web belles et fonctionnelles.",
     "cta": "Voir le Portfolio"
@@ -42,10 +42,18 @@
     "modernityScore": "Score de Modernité",
     "accessibility": "Accessibilité",
     "bestPractices": "Bonnes Pratiques",
-    "cleanCode": "Clean Code",
+    "cleanCode": "Code Propre",
     "notAvailable": "Non disponible",
     "viewOnGithub": "Voir sur GitHub",
     "visitSite": "Visiter le Site",
     "close": "Fermer"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Je suis Sylvain, un développeur full stack passionné. J'ai une solide expérience dans le développement d'applications web."
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "message": "Envoyez-moi un message pour toute question ou collaboration."
   }
 }

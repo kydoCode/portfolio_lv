@@ -47,5 +47,13 @@
     "viewOnGithub": "在GitHub上查看",
     "visitSite": "访问网站",
     "close": "关闭"
+  },
+  "about": {
+    "title": "关于我",
+    "description": "我是一名热爱技术的全栈开发者，具有丰富的网络应用开发经验。"
+  },
+  "contact": {
+    "title": "联系我",
+    "message": "发送我消息以询问或合作。"
   }
 }
