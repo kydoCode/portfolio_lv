@@ -77,6 +77,30 @@ export default function Projects() {
       {modalOpen && selectedProject && (
         <ProjectModal project={selectedProject} onClose={closeModal} />
       )}
+      <section>
+          <h2 className="text-2xl font-semibold mb-4">All Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {reposData.map((project, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                  src={project.image || '/placeholder.svg?height=200&width=300'}
+                  alt={project.name}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+                  <p className="text-gray-600 mb-4">{project.description}</p>
+                  <button
+                    onClick={() => openModal(project)}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       <div className="mt-8 text-center">
         <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
           Back to Home
