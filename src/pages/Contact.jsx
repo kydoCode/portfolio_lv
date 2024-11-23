@@ -36,15 +36,15 @@ export default function Contact() {
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span>john.doe@example.com</span>
+                <span>sylvain@example.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-gray-400 mr-2" />
-                <span>+1 (555) 123-4567</span>
+                <span>+33 6 12 34 56 78</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-gray-400 mr-2" />
-                <span>New York, NY</span>
+                <span>South France</span>
               </div>
             </div>
             <div className="mt-6 flex space-x-6">
