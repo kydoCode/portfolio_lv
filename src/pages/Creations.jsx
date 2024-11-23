@@ -22,7 +22,7 @@ export default function Creations() {
           Back to Home
         </Link>
       </div>
-      <Footer />
+      <Footer className="border-none" />
     </div>
   )
 }
