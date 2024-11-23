@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import ProjectModal from '../components/ProjectModal';
 import reposData from '../data/repos_github_for_portfolio.json';
-import Layout from '../components/Layout';
 import { useTranslation } from 'react-i18next';
 
 export default function Portfolio() {
@@ -32,7 +31,6 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
-      <Layout />
       <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl">
         <h1 className="text-4xl font-bold mb-8 text-center">Portfolio</h1>
 
