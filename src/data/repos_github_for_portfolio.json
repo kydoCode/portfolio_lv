@@ -85,7 +85,7 @@
     "context": "This project involves the development of a Book API, showcasing skills in backend development and API creation using JavaScript and Node.js."
   },
   {
-    "name": "cookie_cookie",
+    "name": "Cookie Cookie",
     "description": "Teamwork: SEO review, peer coding, code review and project managment in agile worflow (trello, clockify, Git/GitHub versioning)",
     "languages": {
       "HTML": 10174,
@@ -113,8 +113,8 @@
     "context": "This project involves the development of a website for a cookie business, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
-    "name": "fonciere_pagerie_malmaison_assignment",
-    "description": null,
+    "name": "Fonciere Pagerie Malmaison (assignment)",
+    "description": "As part as final assignment of a 4 monthes get started course to web development, I had to perform the integration of this project which is a website for a real estate company.",
     "languages": {
       "CSS": 9539,
       "HTML": 8549
@@ -181,7 +181,7 @@
     "context": "This project involves the development of an art hub website, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
   {
-    "name": "GeniArtHub-react-refactor",
+    "name": "GeniArtHub (React refactor)",
     "description": "Based on previous project, this project is a refactoring of the GeniArtHub website using React to get familiar with React and its ecosystem.",
     "languages": {
       "JavaScript": 38683,
@@ -225,7 +225,7 @@
     "context": "This project involves the refactoring of the GeniArtHub website using React, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
   {
-    "name": "hagile_clone",
+    "name": "Hagile (Integration)",
     "description": null,
     "languages": {
       "CSS": 13040,
@@ -352,7 +352,7 @@
     "context": "This project is a personal portfolio website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
-    "name": "oraculus",
+    "name": "Oraculus",
     "description": "Projet JS Oraculus",
     "languages": {
       "CSS": 2283,
@@ -384,7 +384,7 @@
     "context": "This project involves the development of a JavaScript-based website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
-    "name": "oraculus-react-version",
+    "name": "Oraculus (React version)",
     "description": null,
     "languages": {
       "JavaScript": 10218,
@@ -421,7 +421,7 @@
     "context": "This project is a React version of the Oraculus website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
-    "name": "skillfacile-add-dom-events",
+    "name": "Skillfacile (DOM events training)",
     "description": null,
     "languages": {
       "HTML": 13227,
@@ -449,7 +449,7 @@
     "context": "This project involves the development of a website for adding DOM events, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
-    "name": "skillfacile_clone",
+    "name": "Skillfacile clone",
     "description": null,
     "languages": {
       "HTML": 11267,
@@ -481,7 +481,7 @@
     "context": "This project is a clone of the Skillfacile website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
-    "name": "vividly",
+    "name": "Vividly",
     "description": null,
     "languages": {
       "CSS": 6904,
