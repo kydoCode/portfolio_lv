@@ -80,7 +80,7 @@
       "modernity_score": 0
     },
     "repo_url": "https://github.com/kydoCode/BookAPI",
-    "image_path": "",
+    "image_path": "https://i.ibb.co/bzM3RSh/backend-placeholder.jpg",
     "site_url": "https://kydoCode.github.io/BookAPI",
     "context": "This project involves the development of a Book API, showcasing skills in backend development and API creation using JavaScript and Node.js."
   },
@@ -145,7 +145,7 @@
   },
   {
     "name": "GeniArtHub",
-    "description": null,
+    "description": "Practice data pass through url using id parameter in Vanilla JS context",
     "languages": {
       "JavaScript": 28642,
       "CSS": 5364,
@@ -176,13 +176,13 @@
       "modernity_score": 100.0
     },
     "repo_url": "https://github.com/kydoCode/GeniArtHub",
-    "image_path": "https://kydoCode.github.io/portfolio_lv/images/GeniArtHub.png",
+    "image_path": "https://i.ibb.co/Fs4vzpw/Geni-Art-Hub-react-refactor.png",
     "site_url": "https://kydoCode.github.io/GeniArtHub",
     "context": "This project involves the development of an art hub website, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
   {
     "name": "GeniArtHub-react-refactor",
-    "description": null,
+    "description": "Based on previous project, this project is a refactoring of the GeniArtHub website using React to get familiar with React and its ecosystem.",
     "languages": {
       "JavaScript": 38683,
       "CSS": 7355,
@@ -220,7 +220,7 @@
       "modernity_score": 100.0
     },
     "repo_url": "https://github.com/kydoCode/GeniArtHub-react-refactor",
-    "image_path": "https://i.ibb.co/z8VcZdR/Geni-Art-Hub-react-refactor.png",
+    "image_path": "https://i.ibb.co/Fs4vzpw/Geni-Art-Hub-react-refactor.png",
     "site_url": "https://kydoCode.github.io/GeniArtHub-react-refactor",
     "context": "This project involves the refactoring of the GeniArtHub website using React, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
