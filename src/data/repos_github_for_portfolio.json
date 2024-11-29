@@ -62,24 +62,15 @@
   },
   {
     "name": "BookAPI",
-    "description": null,
+    "description": "Deploying first RESTful API with Node.js, Express to be able to create our own RESTful API for our projects in the future",
     "languages": {
       "JavaScript": 3647
     },
     "detected_technologies": {
       "JavaScript": 11,
-      "Go": 1,
       "npm": 1,
       "SQL": 2,
       "Node.js": 10,
-      "Ruby": 10,
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Swift": 1,
-      "Kotlin": 1,
-      "Webpack": 7,
       "TypeScript": 2
     },
     "html_analysis": {
@@ -89,63 +80,13 @@
       "modernity_score": 0
     },
     "repo_url": "https://github.com/kydoCode/BookAPI",
-    "image_path": "https://kydoCode.github.io/portfolio_lv/images/BookAPI.png",
+    "image_path": "",
     "site_url": "https://kydoCode.github.io/BookAPI",
     "context": "This project involves the development of a Book API, showcasing skills in backend development and API creation using JavaScript and Node.js."
   },
   {
-    "name": "brigitte_artgalery_clone",
-    "description": null,
-    "languages": {
-      "HTML": 4701,
-      "CSS": 155
-    },
-    "detected_technologies": {
-      "JavaScript": 1,
-      "Swift": 1,
-      "Kotlin": 1,
-      "CSS": 3
-    },
-    "html_analysis": {
-      "files": {
-        "artworks.html": {
-          "deprecated_count": 0,
-          "total_elements": 10,
-          "deprecated_percentage": 0.0
-        },
-        "contact.html": {
-          "deprecated_count": 0,
-          "total_elements": 10,
-          "deprecated_percentage": 0.0
-        },
-        "index.html": {
-          "deprecated_count": 0,
-          "total_elements": 10,
-          "deprecated_percentage": 0.0
-        },
-        "news.html": {
-          "deprecated_count": 0,
-          "total_elements": 10,
-          "deprecated_percentage": 0.0
-        }
-      },
-      "deprecated_elements": {},
-      "html_versions": {
-        "artworks.html": "HTML5",
-        "contact.html": "HTML5",
-        "index.html": "HTML5",
-        "news.html": "HTML5"
-      },
-      "modernity_score": 100.0
-    },
-    "repo_url": "https://github.com/kydoCode/brigitte_artgalery_clone",
-    "image_path": "https://kydoCode.github.io/portfolio_lv/src/assets/images/projects/brigitte_artgalery_clone.png",
-    "site_url": "https://kydoCode.github.io/brigitte_artgalery_clone",
-    "context": "This project is a clone of an art gallery website, demonstrating skills in HTML and CSS to create a visually appealing and functional website."
-  },
-  {
     "name": "cookie_cookie",
-    "description": null,
+    "description": "Teamwork: SEO review, peer coding, code review and project managment in agile worflow (trello, clockify, Git/GitHub versioning)",
     "languages": {
       "HTML": 10174,
       "CSS": 7151,
@@ -179,17 +120,6 @@
       "HTML": 8549
     },
     "detected_technologies": {
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
-      "TypeScript": 2,
-      "Bootstrap": 1,
-      "JavaScript": 1,
-      "Go": 1,
-      "Swift": 1,
-      "Kotlin": 1,
       "CSS": 1,
       "Flexbox": 1,
       "Grid": 1
@@ -223,17 +153,7 @@
     },
     "detected_technologies": {
       "npm": 1,
-      "JavaScript": 4,
-      "Node.js": 3,
-      "Ruby": 5,
-      "Webpack": 1,
-      "SQL": 1,
-      "PHP": 4,
-      "TypeScript": 2,
-      "Kotlin": 1,
-      "Python": 2,
-      "Java": 2,
-      "C#": 2
+      "JavaScript": 4
     },
     "html_analysis": {
       "files": {
@@ -271,16 +191,7 @@
     "detected_technologies": {
       "npm": 1,
       "JavaScript": 4,
-      "Node.js": 3,
-      "Ruby": 6,
-      "Webpack": 1,
-      "SQL": 1,
-      "PHP": 5,
-      "TypeScript": 3,
-      "Kotlin": 1,
-      "Python": 3,
-      "Java": 3,
-      "C#": 3
+      "Node.js": 3
     },
     "html_analysis": {
       "files": {
@@ -321,16 +232,6 @@
       "HTML": 8245
     },
     "detected_technologies": {
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
-      "TypeScript": 2,
-      "JavaScript": 1,
-      "Go": 1,
-      "Swift": 1,
-      "Kotlin": 1,
       "CSS": 1,
       "Flexbox": 1,
       "Grid": 1
@@ -362,12 +263,6 @@
       "HTML": 1329
     },
     "detected_technologies": {
-      "TypeScript": 2,
-      "JavaScript": 1,
-      "Python": 1,
-      "Go": 1,
-      "Swift": 1,
-      "Kotlin": 1,
       "CSS": 1,
       "Flexbox": 1
     },
@@ -398,17 +293,6 @@
       "CSS": 8281
     },
     "detected_technologies": {
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
-      "TypeScript": 2,
-      "Bootstrap": 1,
-      "JavaScript": 1,
-      "Go": 1,
-      "Swift": 1,
-      "Kotlin": 1,
       "CSS": 1,
       "Flexbox": 1
     },
@@ -475,17 +359,10 @@
       "HTML": 1967
     },
     "detected_technologies": {
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
-      "Bootstrap": 1,
-      "Go": 1,
-      "TypeScript": 1,
       "CSS": 1,
       "Flexbox": 1,
-      "Grid": 1
+      "Grid": 1,
+      "JavaScript": 1
     },
     "html_analysis": {
       "files": {
@@ -516,19 +393,7 @@
     },
     "detected_technologies": {
       "Node.js": 1,
-      "Ruby": 5,
-      "Webpack": 1,
-      "TypeScript": 4,
-      "JavaScript": 3,
-      "Python": 6,
-      "PHP": 4,
-      "Go": 5,
-      "Java": 2,
-      "Swift": 1,
-      "Kotlin": 1,
-      "React": 1,
-      "C#": 1,
-      "Bootstrap": 1
+      "JavaScript": 3
     },
     "html_analysis": {
       "files": {
@@ -591,17 +456,8 @@
       "CSS": 6381
     },
     "detected_technologies": {
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
       "CSS": 2,
       "JavaScript": 1,
-      "Go": 1,
-      "TypeScript": 1,
-      "Swift": 1,
-      "Kotlin": 1,
       "Flexbox": 1,
       "Grid": 1
     },
@@ -632,12 +488,10 @@
       "HTML": 5525
     },
     "detected_technologies": {
-      "Python": 1,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
-      "TypeScript": 1
+      "TypeScript": 1,
+      "JavaScript": 1,
+      "CSS": 1,
+      "HTML": 1
     },
     "html_analysis": {
       "files": {
