@@ -38,14 +38,6 @@
       "HTML": 1238
     },
     "detected_technologies": {
-      "Python": 2,
-      "Java": 1,
-      "C#": 1,
-      "PHP": 1,
-      "Ruby": 1,
-      "Bootstrap": 1,
-      "Go": 1,
-      "TypeScript": 1,
       "CSS": 1,
       "Flexbox": 1
     },
