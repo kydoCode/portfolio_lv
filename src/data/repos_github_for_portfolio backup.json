@@ -225,6 +225,67 @@
     "context": "This project involves the refactoring of the GeniArtHub website using React, showcasing skills in JavaScript, CSS, and HTML to create a functional and visually appealing website."
   },
   {
+    "name": "Hagile (Integration)",
+    "description": null,
+    "languages": {
+      "CSS": 13040,
+      "HTML": 8245
+    },
+    "detected_technologies": {
+      "CSS": 1,
+      "Flexbox": 1,
+      "Grid": 1
+    },
+    "html_analysis": {
+      "files": {
+        "index.html": {
+          "deprecated_count": 0,
+          "total_elements": 90,
+          "deprecated_percentage": 0.0
+        }
+      },
+      "deprecated_elements": {},
+      "html_versions": {
+        "index.html": "HTML5"
+      },
+      "modernity_score": 100.0
+    },
+    "repo_url": "https://github.com/kydoCode/hagile_clone",
+    "image_path": "https://kydoCode.github.io/portfolio_lv/images/hagile_clone.png",
+    "site_url": "https://kydoCode.github.io/hagile_clone",
+    "context": "This project is a clone of the Hagile website, demonstrating skills in HTML and CSS to create a visually appealing and functional website."
+  },
+  {
+    "name": "Home-Key",
+    "description": null,
+    "languages": {
+      "CSS": 1435,
+      "HTML": 1329
+    },
+    "detected_technologies": {
+      "CSS": 1,
+      "Flexbox": 1
+    },
+    "html_analysis": {
+      "files": {
+        "index.html": {
+          "deprecated_count": 0,
+          "total_elements": 39,
+          "deprecated_percentage": 0.0
+        }
+      },
+      "deprecated_elements": {},
+      "html_versions": {
+        "index.html": "HTML5"
+      },
+      "modernity_score": 100.0
+    },
+    "repo_url": "https://github.com/kydoCode/Home-Key",
+    "image_path": "https://kydoCode.github.io/portfolio_lv/images/Home-Key.png",
+    "site_url": "https://kydoCode.github.io/Home-Key",
+    "context": "This project involves the development of a website for a home key business, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
+  },
+  {
     "name": "Home-Key-v2",
     "description": null,
     "languages": {
@@ -254,7 +315,42 @@
     "site_url": "https://kydoCode.github.io/Home-Key-v2",
     "context": "This project is the second version of the Home-Key website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
-
+  {
+    "name": "my_portfolio",
+    "description": null,
+    "languages": {
+      "JavaScript": 2908,
+      "HTML": 360
+    },
+    "detected_technologies": {
+      "Python": 7,
+      "Ruby": 4,
+      "Go": 7,
+      "TypeScript": 5,
+      "JavaScript": 5,
+      "Java": 2,
+      "PHP": 5,
+      "npm": 1
+    },
+    "html_analysis": {
+      "files": {
+        "index.html": {
+          "deprecated_count": 0,
+          "total_elements": 9,
+          "deprecated_percentage": 0.0
+        }
+      },
+      "deprecated_elements": {},
+      "html_versions": {
+        "index.html": "Unknown"
+      },
+      "modernity_score": 100.0
+    },
+    "repo_url": "https://github.com/kydoCode/my_portfolio",
+    "image_path": "https://kydoCode.github.io/portfolio_lv/images/my_portfolio.png",
+    "site_url": "https://kydoCode.github.io/my_portfolio",
+    "context": "This project is a personal portfolio website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
+  },
   {
     "name": "Oraculus",
     "description": "Projet JS Oraculus",
@@ -288,6 +384,43 @@
     "context": "This project involves the development of a JavaScript-based website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   },
   {
+    "name": "Oraculus (React version)",
+    "description": null,
+    "languages": {
+      "JavaScript": 10218,
+      "CSS": 4566,
+      "HTML": 2353
+    },
+    "detected_technologies": {
+      "Node.js": 1,
+      "JavaScript": 3
+    },
+    "html_analysis": {
+      "files": {
+        "oculus-react/index.html": {
+          "deprecated_count": 0,
+          "total_elements": 9,
+          "deprecated_percentage": 0.0
+        },
+        "htmlcssjs-project/oraculus-react/oraculus-correction-ajax/index.html": {
+          "deprecated_count": 0,
+          "total_elements": 51,
+          "deprecated_percentage": 0.0
+        }
+      },
+      "deprecated_elements": {},
+      "html_versions": {
+        "oculus-react/index.html": "Unknown",
+        "htmlcssjs-project/oraculus-react/oraculus-correction-ajax/index.html": "HTML5"
+      },
+      "modernity_score": 100.0
+    },
+    "repo_url": "https://github.com/kydoCode/oraculus-react-version",
+    "image_path": "https://kydoCode.github.io/portfolio_lv/images/oraculus-react-version.png",
+    "site_url": "https://kydoCode.github.io/oraculus-react-version",
+    "context": "This project is a React version of the Oraculus website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
+  },
+  {
     "name": "Skillfacile (DOM events training)",
     "description": null,
     "languages": {
@@ -314,5 +447,69 @@
     "image_path": "https://i.ibb.co/N1mVHjZ/skillfacile-add-dom-events.png",
     "site_url": "https://kydoCode.github.io/skillfacile-add-dom-events",
     "context": "This project involves the development of a website for adding DOM events, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
+  },
+  {
+    "name": "Skillfacile clone",
+    "description": null,
+    "languages": {
+      "HTML": 11267,
+      "CSS": 6381
+    },
+    "detected_technologies": {
+      "CSS": 2,
+      "JavaScript": 1,
+      "Flexbox": 1,
+      "Grid": 1
+    },
+    "html_analysis": {
+      "files": {
+        "index.html": {
+          "deprecated_count": 0,
+          "total_elements": 131,
+          "deprecated_percentage": 0.0
+        }
+      },
+      "deprecated_elements": {},
+      "html_versions": {
+        "index.html": "HTML5"
+      },
+      "modernity_score": 100.0
+    },
+    "repo_url": "https://github.com/kydoCode/skillfacile_clone",
+    "image_path": "https://kydoCode.github.io/portfolio_lv/images/skillfacile_clone.png",
+    "site_url": "https://kydoCode.github.io/skillfacile_clone",
+    "context": "This project is a clone of the Skillfacile website, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
+  },
+  {
+    "name": "Vividly",
+    "description": null,
+    "languages": {
+      "CSS": 6904,
+      "HTML": 5525
+    },
+    "detected_technologies": {
+      "TypeScript": 1,
+      "JavaScript": 1,
+      "CSS": 1,
+      "HTML": 1
+    },
+    "html_analysis": {
+      "files": {
+        "index.html": {
+          "deprecated_count": 0,
+          "total_elements": 98,
+          "deprecated_percentage": 0.0
+        }
+      },
+      "deprecated_elements": {},
+      "html_versions": {
+        "index.html": "HTML5"
+      },
+      "modernity_score": 100.0
+    },
+    "repo_url": "https://github.com/kydoCode/vividly",
+    "image_path": "https://kydoCode.github.io/portfolio_lv/images/vividly.png",
+    "site_url": "https://kydoCode.github.io/vividly",
+    "context": "This project involves the development of a website for a vivid art business, showcasing skills in HTML, CSS, and JavaScript to create a functional and visually appealing website."
   }
 ]
