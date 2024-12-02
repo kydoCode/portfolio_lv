@@ -69,7 +69,7 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl font-bold mb-8 text-center">Portfolio</h1>
+        <h1 className="text-4xl font-bold mt-8 mb-8 text-center">Portfolio</h1>
 
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900">{t('featuredWork.title')}</h2>
