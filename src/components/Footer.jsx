@@ -2,6 +2,10 @@ import React from 'react';
 import { Github, Linkedin } from 'lucide-react';
 
 export default function Footer() {
+
+  const d = new Date();
+  let year = d.getFullYear();
+
   return (
     <footer className="bg-gray-800 text-white py-4 w-full mt-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +19,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-sm text-center sm:text-right">
-            © 2025 - Sylvain CLEMENT - All rights reserved
+            © {year} - Sylvain CLEMENT - All rights reserved
           </div>
         </div>
       </div>
