@@ -8,7 +8,7 @@ import Education from './pages/Education'
 import Hobbies from './pages/Hobbies'
 import Contact from './pages/Contact'
 import About from './pages/About'
-import NotFound from './pages/NotFound'
+// import NotFound from './pages/NotFound'
 
 
 export default function App() {
@@ -26,7 +26,8 @@ export default function App() {
         <Route path="/about" element={<About />} />
 
         {/* Route par défaut qui redirige vers la page 404 */}
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<Portfolio />} />
       </Routes>
     </Router>
   )
