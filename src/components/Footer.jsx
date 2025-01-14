@@ -15,7 +15,7 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-sm text-center sm:text-right">
-            © 2024 - Sylvain CLEMENT - All rights reserved
+            © 2025 - Sylvain CLEMENT - All rights reserved
           </div>
         </div>
       </div>
