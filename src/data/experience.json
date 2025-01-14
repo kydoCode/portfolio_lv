@@ -2,6 +2,20 @@
   "experience": [
     {
       "poste": "Développeur web stagiaire",
+      "annees": ["2024 - 2025"],
+      "entreprise": "Taxi Laurie Bouclier",
+      "logo": "https://taxilauriebouclier.wordpress.com/wp-content/uploads/2024/12/cropped-android-chrome-512x512-2.png?w=70&h=70",
+      "url": "https://taxilauriebouclier.wordpress.com/",
+      "favicon": "",
+      "details": [
+        "Développement du site avec le CMS Wordpress.",
+        "Participation à des réunions d'équipe pour discuter des exigences et des solutions techniques.",
+        "Stratégie SEO",
+        "Rédaction de documentation technique et des tutoriaux de prise en main pour la cliente."
+      ]
+    },
+    {
+      "poste": "Développeur web stagiaire",
       "annees": ["2024"],
       "entreprise": "Instant Media",
       "logo": "https://i.ibb.co/bsQLWZC/logo.png",
