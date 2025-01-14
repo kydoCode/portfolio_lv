@@ -8,6 +8,8 @@ import Education from './pages/Education'
 import Hobbies from './pages/Hobbies'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import NotFound from './pages/NotFound'
+
 
 export default function App() {
   return (
@@ -22,6 +24,9 @@ export default function App() {
         <Route path="/hobbies" element={<Hobbies />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+
+        {/* Route par défaut qui redirige vers la page 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   )
