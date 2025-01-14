@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 export default function Hobbies() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
       <h1 className="text-3xl font-bold mt-4 mb-4">Hobbies</h1>
       <ul className="space-y-4 w-full max-w-3xl">

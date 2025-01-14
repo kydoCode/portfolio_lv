@@ -21,7 +21,8 @@ export default function About() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-100">
+      {/* py-12 px-4 sm:px-6 lg:px-8*/}
       <div>
         <Header />
         <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-8">About Me</h1>

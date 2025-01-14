@@ -25,7 +25,8 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
+      {/* py-12 px-4 sm:px-6 lg:px-8  */}
       <div className="w-full max-w-screen-lg">
         <Header />
         <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-8">Contact Me</h1>
