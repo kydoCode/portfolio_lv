@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Code, Globe, Lightbulb } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import backgroundImage from '../assets/images/background02.jpeg';
 
 export default function About() {
   const [selectedSection, setSelectedSection] = useState('')
@@ -21,7 +22,7 @@ export default function About() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="p-auto m-auto min-h-screen bg-gray-100 bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
       {/* py-12 px-4 sm:px-6 lg:px-8*/}
       <div>
         <Header />
@@ -120,7 +121,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="mt-8 text-center">
+        <div className="mb-8 mt-8 text-center">
           <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
             Back to Home
           </Link>

@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import backgroundImage from '../assets/images/background02.jpeg';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -25,10 +26,10 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
       {/* py-12 px-4 sm:px-6 lg:px-8  */}
-      <div className="w-full max-w-screen-lg">
         <Header />
+      <div className="w-full max-w-screen-lg">
         <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-8">Contact Me</h1>
         
         <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
@@ -116,13 +117,13 @@ export default function Contact() {
             </form>
           </div>
         </div>
-        <div className="mt-8 text-center">
+        <div className="mb-8 mt-8 text-center">
           <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
             Back to Home
           </Link>
         </div>
-        <Footer />
       </div>
+        <Footer />
     </div>
   )
 }
