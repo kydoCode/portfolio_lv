@@ -1,5 +1,14 @@
 {
   "education": [
+
+    {
+      "intitule": "SAS: Testeur QA Jeux Vidéos",
+      "annees": ["03/2025 - 04/2025"],
+      "etablissement": "Simplon.co",
+      "url": "https://www.simplon.co/developpement/decouverte-metier-test-jeux-video",
+      "logo": "https://i.ibb.co/hmn85c7/logo-simplon.png",
+      "favicon": "https://i.ibb.co/3WF880F/favicon-simplon.png"
+    },
     {
       "intitule": "DWWM: Développeur Web et Web Mobile",
       "annees": ["04/2024 - 02/2025"],
@@ -66,35 +75,30 @@
       "favicon": "https://i.ibb.co/nsrz5nK/favicon-ens.png"
     },
     {
-      "intitule": "Cycle Bachelor: CPGE, NEOMA & L3 + Licence LLCE Allemand",
-      "annees": ["2005 - 2009"],
-      "etablissements": [
-        {
-          "nom": "Université de Strasbourg",
-          "mention": "Assez Bien",
-          "url": "https://langues.unistra.fr/formation/licences/licence-langues-litteratures-et-civilisations-etrangeres-et-regionales/parcours-monolingues/etudes-allemandes-langues-et-cultures-des-mondes-germaniques-ead/",
-          "logo": "https://i.ibb.co/DfkZhwQ/logo-unistra.jpg",
-          "favicon": "https://i.ibb.co/7bpMRTP/favicon-unistra.png"
-        },
-        {
-          "nom": "Sup de Co Reims",
-          "intitule": "Bachelor",
-          "url": "https://neoma-bs.fr/formations/programme-grande-ecole/",
-          "logo": "https://i.ibb.co/PMwtXm1/logo-neoma.png",
-          "favicon": "https://i.ibb.co/g9X2D0t/favicon-neoma.png"
-        },
-        {
-          "nom": "Lycée Masséna",
-          "intitule": "CPGE (Équivalence L2) + khûbbe",
-          "mention": "Très Bien",
-          "url": "https://www.lycee-massena.fr/les-cpge/#CPGE_prepa",
-          "logo": "https://i.ibb.co/Vwrw7j1/logo-massena.png",
-          "favicon": " https://i.ibb.co/cF6wYdD/favicon-massena.png"
-        }
-      ],
+      "intitule": "Licence LLCE Allemand - L3",
+      "annees": ["2008 - 2009"],
+      "etablissement": "Université de Strasbourg",
+      "mention": "Assez Bien",
       "url": "https://langues.unistra.fr/formation/licences/licence-langues-litteratures-et-civilisations-etrangeres-et-regionales/parcours-monolingues/etudes-allemandes-langues-et-cultures-des-mondes-germaniques-ead/",
+      "logo": "https://i.ibb.co/DfkZhwQ/logo-unistra.jpg",
+      "favicon": "https://i.ibb.co/7bpMRTP/favicon-unistra.png"
+    },
+    {
+      "intitule": "Sup de Co Reims",
+      "annees": ["2008 - 2009"],
+      "etablissement": "Sup de Co Reims",
+      "url": "https://neoma-bs.fr/formations/programme-grande-ecole/",
       "logo": "https://i.ibb.co/PMwtXm1/logo-neoma.png",
       "favicon": "https://i.ibb.co/g9X2D0t/favicon-neoma.png"
+    },
+    {
+      "intitule": "Lycée Masséna",
+      "annees": ["2005 - 2008"],
+      "etablissement": "Lycée Masséna",
+      "mention": "Très Bien",
+      "url": "https://www.lycee-massena.fr/les-cpge/#CPGE_prepa",
+      "logo": "https://i.ibb.co/Vwrw7j1/logo-massena.png",
+      "favicon": "https://i.ibb.co/cF6wYdD/favicon-massena.png"
     }
   ]
 }

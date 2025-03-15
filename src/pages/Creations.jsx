@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 import creationsData from '../data/creations.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import backgroundImage from '../assets/images/background02.jpeg';
 
 export default function Creations() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center">
+  return (   
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
       <Header />
+      <main>
       <h1 className="text-3xl font-bold mb-4 mt-8">Creations</h1>
       <ul className="space-y-4 w-full max-w-3xl">
         {creationsData.creations.map((creation, index) => (
@@ -22,6 +24,7 @@ export default function Creations() {
           Back to Home
         </Link>
       </div>
+      </main>
       <Footer />
     </div>
   )

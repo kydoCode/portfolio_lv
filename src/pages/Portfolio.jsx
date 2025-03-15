@@ -7,6 +7,9 @@ import { Carousel } from 'react-responsive-carousel'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import reposData from '../data/repos_github_for_portfolio.json'
+import backgroundImage from '../assets/images/background02.jpeg';
+
+
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation()
@@ -48,7 +51,9 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
-      <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl">
+      <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
+      {/* bg-gradient-to-r from-blue-600 from-10% via-teal-500 via-30% to-gray-700 to-90% */} 
+        {/* bg-[#50d71e] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-linear-to-r/srgb from-indigo-500 to-teal-400*/}
         <div className="bg-white rounded-lg shadow-xl overflow-hidden">
           <div className="md:flex">
             <div className="md:flex-shrink-0">
@@ -69,10 +74,10 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl font-bold mt-8 mb-8 text-center">Portfolio</h1>
+        <h1 className="text-4xl text-white font-bold mt-8 mb-8 text-center">Portfolio</h1>
 
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-900">{t('featuredWork.title')}</h2>
+          <h2 className="text-2xl text-white font-bold text-gray-900">{t('featuredWork.title')}</h2>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {featuredWork.map((item, index) => (
               <div key={index} className="bg-white overflow-hidden shadow rounded-lg">
@@ -103,7 +108,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-900">{t('latestProjects.title')}</h2>
+          <h2 className="text-2xl text-white font-bold text-gray-900">{t('latestProjects.title')}</h2>
           <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
             {reposData.slice(0, 6).map((project, index) => (
               <div key={index} className="bg-white overflow-hidden shadow rounded-lg">

@@ -6,6 +6,7 @@ import ProjectModal from '../components/ProjectModal'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import backgroundImage from '../assets/images/background02.jpeg';
 
 export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -34,7 +35,7 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
-      <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xl">
+      <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xlbg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
         <h1 className="text-3xl font-bold mb-6">Projects</h1>
         <div className="w-full max-w-4xl mx-auto">
           <Carousel 
@@ -71,6 +72,11 @@ export default function Projects() {
               </div>
             ))}
           </Carousel>
+          <div className="mt-8 text-center">
+            <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+              Back to Home
+            </Link>
+          </div>
         </div>
       </main>
 
@@ -101,11 +107,6 @@ export default function Projects() {
             ))}
           </div>
         </section> */}
-      <div className="mt-8 text-center">
-        <Link to="/" className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
-          Back to Home
-        </Link>
-      </div>
       <Footer />
     </div>
   )

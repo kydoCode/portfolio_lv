@@ -14,6 +14,7 @@ import {
   SiMongodb, SiSwift, SiVisualstudiocode, SiXcode, SiGithubcopilot, SiEslint
 } from 'react-icons/si'
 import { BsKanban } from 'react-icons/bs'
+import backgroundImage from '../assets/images/background02.jpeg';
 
 export default function Skills() {
   const [accordionState, setAccordionState] = useState({});
@@ -71,8 +72,8 @@ export default function Skills() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Header />
-      <main className="flex-grow flex flex-col items-center justify-center px-4 py-8">
-        <h1 className="text-3xl font-bold mb-8">Skills</h1>
+      <main className="flex-grow flex flex-col items-center justify-center px-4 py-8 bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
+        <h1 className="text-3xl text-white font-bold mb-8">Skills</h1>
         <div className="w-full max-w-4xl mx-auto space-y-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">Hard Skills</h2>

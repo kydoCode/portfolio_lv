@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom'
 import experienceData from '../data/experience.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import backgroundImage from '../assets/images/background02.jpeg';
+
 
 export default function Experience() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Header />
-      <main className="flex-grow container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold mb-6 text-center">Experience</h1>
+      <main className="flex-grow container mx-auto px-4 py-8 sm:px-6 lg:px-8 bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
+        <h1 className="text-3xl text-white font-bold mb-6 text-center">Experience</h1>
         <ul className="space-y-6">
           {experienceData.experience.map((experience, index) => (
             <li 

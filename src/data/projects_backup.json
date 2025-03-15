@@ -1,7 +1,7 @@
 {
   "projets": [
     {
-      "nom": "AgilFlow",
+      "nom": "SparkUX",
       "description": "application de gestion des userStories",
       "context": "Développement d'une application pour gérer les user stories dans un environnement agile.",
       "technologies": ["React", "Node.js", "MongoDB"],
@@ -17,7 +17,7 @@
       "year": 2024
     },
     {
-      "nom": "Zer0Wipe",
+      "nom": "SecuWipe",
       "description": "application d'effacement sécurisé des données",
       "context": "Développement d'une application pour l'effacement sécurisé des données sensibles.",
       "technologies": ["Python", "Django"],
