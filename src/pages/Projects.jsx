@@ -6,7 +6,7 @@ import ProjectModal from '../components/ProjectModal'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -36,7 +36,7 @@ export default function Projects() {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center">
       <Header />
       <main className="py-12 px-4 sm:px-6 lg:px-8 w-full max-w-screen-xlbg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
-        <h1 className="text-3xl font-bold mb-6">Projects</h1>
+        <h1 className="text-3xl text-white text-center font-bold mb-6">Projects</h1>
         <div className="w-full max-w-4xl mx-auto">
           <Carousel 
             showThumbs={false} 

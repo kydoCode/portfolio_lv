@@ -14,7 +14,7 @@ import {
   SiMongodb, SiSwift, SiVisualstudiocode, SiXcode, SiGithubcopilot, SiEslint
 } from 'react-icons/si'
 import { BsKanban } from 'react-icons/bs'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 export default function Skills() {
   const [accordionState, setAccordionState] = useState({});

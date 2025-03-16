@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ export default function Contact() {
       {/* py-12 px-4 sm:px-6 lg:px-8  */}
         <Header />
       <div className="w-full max-w-screen-lg">
-        <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-8">Contact Me</h1>
+        <h1 className="text-3x text-white text-center font-bold text-gray-900 mt-8 mb-8">Contact Me</h1>
         
         <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
           <div className="px-4 py-5 sm:p-6">

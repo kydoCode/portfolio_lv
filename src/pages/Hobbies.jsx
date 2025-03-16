@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import hobbiesData from '../data/hobbies.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 export default function Hobbies() {
   return (
+    <>
     <div className="min-h-screen bg-gray-100 flex flex-col items-center bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
       <Header />
-      <h1 className="text-3xl font-bold mt-4 mb-4">Hobbies</h1>
+      <h1 className="text-3xl text-white font-bold mt-4 mb-4">Hobbies</h1>
       <ul className="space-y-4 w-full max-w-3xl">
         {hobbiesData.hobbies.map((hobby, index) => (
           <li key={index} className="bg-white shadow-lg rounded-lg p-6">
@@ -23,7 +24,8 @@ export default function Hobbies() {
           Back to Home
         </Link>
       </div>
-      <Footer />
     </div>
+      <Footer />
+    </>
   )
 }

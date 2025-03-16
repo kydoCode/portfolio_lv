@@ -7,7 +7,7 @@ import { Carousel } from 'react-responsive-carousel'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import reposData from '../data/repos_github_for_portfolio.json'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 
 

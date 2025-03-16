@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import educationData from '../data/education_light.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 export default function Education() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col bg-no-repeat bg-cover bg-fixed" style={{backgroundImage: `url(${backgroundImage})`}}>
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold mb-6 text-center">Education</h1>
+        <h1 className="text-3xl text-white font-bold mb-6 text-center">Education</h1>
         <ul className="space-y-6">
           {educationData.education.map((education, index) => (
             <li 

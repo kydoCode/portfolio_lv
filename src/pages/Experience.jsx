@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import experienceData from '../data/experience.json'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 
 export default function Experience() {

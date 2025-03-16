@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Code, Globe, Lightbulb } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import backgroundImage from '../assets/images/background02.jpeg';
+import backgroundImage from '../assets/images/background.svg';
 
 export default function About() {
   const [selectedSection, setSelectedSection] = useState('')
@@ -26,7 +26,7 @@ export default function About() {
       {/* py-12 px-4 sm:px-6 lg:px-8*/}
       <div>
         <Header />
-        <h1 className="text-3xl font-bold text-gray-900 mt-8 mb-8">About Me</h1>
+        <h1 className="text-3xl text-white font-bold text-gray-900 mt-8 mb-8">About Me</h1>
 
         <div className="mb-8">
           <label htmlFor="section-select" className="block text-sm font-medium text-gray-700">
