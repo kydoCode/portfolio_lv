@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
-import backgroundImage from '../assets/images/background.svg';
+import backgroundImage from '/images/background.svg';
 
 export default function Contact() {
   const [formData, setFormData] = useState({

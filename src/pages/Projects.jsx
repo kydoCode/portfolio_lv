@@ -6,7 +6,7 @@ import ProjectModal from '../components/ProjectModal'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import backgroundImage from '../assets/images/background.svg';
+import backgroundImage from '/images/background.svg';
 
 export default function Projects() {
   const [modalOpen, setModalOpen] = useState(false)
