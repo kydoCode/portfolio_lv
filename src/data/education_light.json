@@ -1,6 +1,13 @@
 {
   "education": [
-
+    {
+      "intitule": "Concepteur Développeur UI FIF && Développeur de Jeux Vidéo d'intérêt général E-santé et E-Tourisme",
+      "annees": [ "04/2025 - 12/2025"],
+      "etablissement": "MODE 83",
+      "url": "https://mode83.net/site/wp-content/uploads/2024/09/2024-MODE-Plaquette-Level-One-developpement-de-jeux-video-fif-session-3.pdf",
+      "logo": "https://i.ibb.co/Vcxj3H4x/logo-2023-300x99.png",
+      "favicon": "https://i.ibb.co/354V48G0/cropped-Sans-fond-MODE83-180x180.png"
+    },
     {
       "intitule": "SAS: Testeur QA Jeux Vidéos",
       "annees": ["03/2025 - 04/2025"],
